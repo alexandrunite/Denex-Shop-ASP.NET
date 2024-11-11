@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|c:\\users\\alexn\\documents\\github\\daw-project-mihaila-nite\\shopsphere\\shopsphere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|solutionrelative:shopsphere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Program.cs",
+              "RelativeDocumentMoniker": "ShopSphere\\Program.cs",
+              "ToolTip": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Program.cs",
+              "RelativeToolTip": "ShopSphere\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T10:08:51.211Z",
+              "EditorCaption": ""
             }
           ]
         }
