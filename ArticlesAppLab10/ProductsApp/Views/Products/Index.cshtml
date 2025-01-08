@@ -15,13 +15,57 @@
 <br />
 
 @* Motorul de cautare *@
-<form method="GET">
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Search topics or keywords" name="search"
-               value="@ViewBag.SearchString">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-    </div>
+<form method="GET" class="d-flex mb-4">
+    <input type="text" class="form-control me-2" placeholder="Caută produse..." name="search" value="@ViewBag.SearchString">
+    <select class="form-select me-2" name="sortOrder" onchange="this.form.submit()">
+        @if (ViewBag.CurrentSort == "")
+        {
+            <option value="" selected>Sortare implicită</option>
+        }
+        else
+        {
+            <option value="">Sortare implicită</option>
+        }
+
+        @if (ViewBag.CurrentSort == "price_asc")
+        {
+            <option value="price_asc" selected>Preț crescător</option>
+        }
+        else
+        {
+            <option value="price_asc">Preț crescător</option>
+        }
+
+        @if (ViewBag.CurrentSort == "price_desc")
+        {
+            <option value="price_desc" selected>Preț descrescător</option>
+        }
+        else
+        {
+            <option value="price_desc">Preț descrescător</option>
+        }
+
+        @if (ViewBag.CurrentSort == "rating_asc")
+        {
+            <option value="rating_asc" selected>Rating crescător</option>
+        }
+        else
+        {
+            <option value="rating_asc">Rating crescător</option>
+        }
+
+        @if (ViewBag.CurrentSort == "rating_desc")
+        {
+            <option value="rating_desc" selected>Rating descrescător</option>
+        }
+        else
+        {
+            <option value="rating_desc">Rating descrescător</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-outline-success">Caută</button>
 </form>
+
 
 @foreach (var product in Model)
 {

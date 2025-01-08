@@ -12,7 +12,7 @@ using ProductsApp.Data;
 namespace ProductsApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241217105631_InitialMgr")]
+    [Migration("20250108130820_InitialMgr")]
     partial class InitialMgr
     {
         /// <inheritdoc />

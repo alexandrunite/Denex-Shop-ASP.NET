@@ -78,6 +78,13 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            @if (TempData["message"] != null)
+            {
+                <div class="alert @TempData["Alert"] p-3 rounded-3 text-center mb-5">
+                    @TempData["message"]
+                </div>
+            }
+
             @RenderBody()
         </main>
     </div>

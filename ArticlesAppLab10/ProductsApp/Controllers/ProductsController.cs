@@ -46,50 +46,38 @@ namespace ProductsApp.Controllers
 
             // Configurări de sortare
             ViewBag.CurrentSort = sortOrder;
-            ViewBag.PriceSortParam = String.IsNullOrEmpty(sortOrder) ? "price_desc" : "";
-            ViewBag.RatingSortParam = sortOrder == "Rating" ? "rating_desc" : "Rating";
+            ViewBag.PriceSortParam = sortOrder == "price_asc" ? "price_desc" : "price_asc";
+            ViewBag.RatingSortParam = sortOrder == "rating_asc" ? "rating_desc" : "rating_asc";
 
-            bool isAdmin = User.IsInRole("Admin");
-            bool isColaborator = User.IsInRole("Colaborator");
-            string userId = _userManager.GetUserId(User);
-
-            // Query inițial pentru produse
             var products = _context.Products
                 .Include(p => p.Category)
-                .Include(p => p.User)
                 .Include(p => p.Reviews)
                 .AsQueryable();
 
-            // Filtrare pentru ne-admini
-            if (!isAdmin)
-            {
-                // Utilizatorii neînregistrați vor vedea doar produsele aprobate
-                // Utilizatorii înregistrați și colaboratorii vor vedea produsele aprobate și propriile produse neaprobate
-                products = products.Where(p => p.IsApproved || (isColaborator && p.UserId == userId));
-            }
-
             // Căutare
-            if (!String.IsNullOrEmpty(search))
+            if (!string.IsNullOrEmpty(search))
             {
                 search = search.Trim();
-                products = products.Where(p => p.Title.Contains(search) || p.Content.Contains(search) ||
-                                               p.Reviews.Any(r => r.Content.Contains(search)));
+                products = products.Where(p => p.Title.Contains(search) || p.Content.Contains(search));
             }
 
             // Sortare
             switch (sortOrder)
             {
+                case "price_asc":
+                    products = products.OrderBy(p => p.Price);
+                    break;
                 case "price_desc":
                     products = products.OrderByDescending(p => p.Price);
                     break;
-                case "Rating":
+                case "rating_asc":
                     products = products.OrderBy(p => p.Rating);
                     break;
                 case "rating_desc":
                     products = products.OrderByDescending(p => p.Rating);
                     break;
                 default:
-                    products = products.OrderBy(p => p.Price);
+                    products = products.OrderBy(p => p.Title); // Sortare implicită
                     break;
             }
 
@@ -99,22 +87,13 @@ namespace ProductsApp.Controllers
             int totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
             var paginatedProducts = products.Skip((page - 1) * pageSize).Take(pageSize).ToList();
 
-            // Calculare rating pentru fiecare produs
-            foreach (var product in paginatedProducts)
-            {
-                product.CalculateRating();
-            }
-            _context.SaveChanges();
-
-            _logger.LogInformation("Total produse paginate: {PaginatedProductsCount}", paginatedProducts.Count);
-
-            // Set ViewBag pentru paginare
             ViewBag.lastPage = totalPages;
-            ViewBag.PaginationBaseUrl = Url.Action("Index", new { search = search, sortOrder = sortOrder, page = "__page__" });
+            ViewBag.PaginationBaseUrl = Url.Action("Index", new { search, sortOrder, page = "__page__" });
 
-            // Returnează view-ul cu modelul
             return View(paginatedProducts);
         }
+
+
 
         #endregion
 
@@ -173,6 +152,13 @@ namespace ProductsApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Show([Bind("ProductId,Content,Rating")] Review review)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                TempData["message"] = "Trebuie să fii autentificat pentru a lăsa un review!";
+                TempData["Alert"] = "alert-danger";
+                return RedirectToAction("Register", "Account", new { area = "Identity" });
+            }
+
             string userId = _userManager.GetUserId(User);
             review.UserId = userId;
             review.Date = DateTime.Now;
@@ -643,6 +629,13 @@ namespace ProductsApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult AddCart([Bind("ProductId,CartId,Quantity")] ProductCart productCart)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                TempData["message"] = "Trebuie să fii autentificat pentru a adăuga produse în coș!";
+                TempData["Alert"] = "alert-danger";
+                return RedirectToAction("Register", "Account", new { area = "Identity" });
+            }
+
             string userId = _userManager.GetUserId(User);
 
             var product = _context.Products.Find(productCart.ProductId);

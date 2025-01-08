@@ -1,34 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\productsapp\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\user\\documents\\github\\daw-project-mihaila-nite\\articlesapplab10\\productsapp\\views\\shared\\productinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\views\\shared\\productinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\productsapp\\views\\products\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\views\\products\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\user\\documents\\github\\daw-project-mihaila-nite\\articlesapplab10\\productsapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\productsapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\user\\documents\\github\\daw-project-mihaila-nite\\articlesapplab10\\productsapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\user\\documents\\github\\daw-project-mihaila-nite\\articlesapplab10\\productsapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\productsapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\user\\documents\\github\\daw-project-mihaila-nite\\articlesapplab10\\productsapp\\views\\carts\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\views\\carts\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\productsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\productsapp\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\productsapp\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|c:\\users\\user\\documents\\github\\daw-project-mihaila-nite\\articlesapplab10\\productsapp\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ProductsApp\\ProductsApp.csproj|solutionrelative:productsapp\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,112 +33,90 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 888,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "New.cshtml",
-              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Views\\Products\\New.cshtml",
-              "RelativeDocumentMoniker": "ProductsApp\\Views\\Products\\New.cshtml",
-              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Views\\Products\\New.cshtml",
-              "RelativeToolTip": "ProductsApp\\Views\\Products\\New.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ProductInfo.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Views\\Shared\\ProductInfo.cshtml",
+              "RelativeDocumentMoniker": "ProductsApp\\Views\\Shared\\ProductInfo.cshtml",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Views\\Shared\\ProductInfo.cshtml",
+              "RelativeToolTip": "ProductsApp\\Views\\Shared\\ProductInfo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T12:49:12.167Z",
+              "WhenOpened": "2025-01-08T16:29:09.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ProductsApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ProductsApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEQAAAB7AAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProductsApp\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "ProductsApp\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T12:26:52.195Z"
+              "WhenOpened": "2025-01-08T16:22:10.755Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Models\\SeedData.cs",
-              "RelativeDocumentMoniker": "ProductsApp\\Models\\SeedData.cs",
-              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Models\\SeedData.cs",
-              "RelativeToolTip": "ProductsApp\\Models\\SeedData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T12:07:56.248Z",
+              "DocumentIndex": 4,
+              "Title": "Show.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Views\\Carts\\Show.cshtml",
+              "RelativeDocumentMoniker": "ProductsApp\\Views\\Carts\\Show.cshtml",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Views\\Carts\\Show.cshtml",
+              "RelativeToolTip": "ProductsApp\\Views\\Carts\\Show.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T16:05:07.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "ProductsApp\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Models\\Product.cs",
-              "RelativeToolTip": "ProductsApp\\Models\\Product.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAmwEMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T08:42:47.577Z"
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ProductsApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ProductsApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T15:54:37.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "ProductsApp\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "ProductsApp\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAhAAAAAAAAAA==",
+              "Title": "CartsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Controllers\\CartsController.cs",
+              "RelativeDocumentMoniker": "ProductsApp\\Controllers\\CartsController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Controllers\\CartsController.cs",
+              "RelativeToolTip": "ProductsApp\\Controllers\\CartsController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAswLoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T08:53:48.55Z"
+              "WhenOpened": "2025-01-08T15:44:37.521Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Program.cs",
-              "RelativeDocumentMoniker": "ProductsApp\\Program.cs",
-              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Program.cs",
-              "RelativeToolTip": "ProductsApp\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ProductsApp\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ProductsApp\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAiwNQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T07:58:34.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "ProductsApp\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ProductsApp\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "ProductsApp\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T07:55:13.869Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1099,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "WhenOpened": "2025-01-08T15:43:05.294Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -10,7 +10,7 @@
 
         <div><i class="bi bi-globe"></i> @Model.Category.CategoryName</div>
 
-        <div><i class="bi bi-person"></i> @Model.User.UserName</div>
+        <div><i class="bi bi-person"></i> @(Model.User != null ? Model.User.UserName : "Utilizator necunoscut")</div>
 
         <span class="alert-success">@Model.Date</span>
 
