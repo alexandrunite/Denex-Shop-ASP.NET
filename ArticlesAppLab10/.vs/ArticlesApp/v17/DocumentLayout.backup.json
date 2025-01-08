@@ -1,0 +1,344 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\products\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\products\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\models\\viewmodel\\productcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\models\\viewmodel\\productcreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\products\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\products\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\reviews\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\reviews\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\categories\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\categories\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\categories\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\categories\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\carts\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\carts\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\carts\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\carts\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|c:\\users\\alexn\\desktop\\articlesapplab10\\articlesapp\\views\\carts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE39A355-6DB1-490B-BC6F-F9B8E34C1E18}|ArticlesApp\\ArticlesApp.csproj|solutionrelative:articlesapp\\views\\carts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1099,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductCreateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Models\\ViewModel\\ProductCreateViewModel.cs",
+              "RelativeDocumentMoniker": "ArticlesApp\\Models\\ViewModel\\ProductCreateViewModel.cs",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Models\\ViewModel\\ProductCreateViewModel.cs",
+              "RelativeToolTip": "ArticlesApp\\Models\\ViewModel\\ProductCreateViewModel.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T07:42:24.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Products\\New.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Products\\New.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Products\\New.cshtml*",
+              "RelativeToolTip": "ArticlesApp\\Views\\Products\\New.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:22:25.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ArticlesApp\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Models\\Product.cs",
+              "RelativeToolTip": "ArticlesApp\\Models\\Product.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T07:30:17.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "ArticlesApp\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "ArticlesApp\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T21:38:34.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ArticlesApp\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ArticlesApp\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAswBIBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T21:33:18.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Reviews\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Reviews\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Reviews\\Edit.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Reviews\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:23:04.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Show.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Products\\Show.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Products\\Show.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Products\\Show.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Products\\Show.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:22:58.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:22:13.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:21:44.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:21:30.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:21:23.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Show.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Categories\\Show.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Categories\\Show.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Categories\\Show.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Categories\\Show.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:20:49.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Categories\\New.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Categories\\New.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Categories\\New.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Categories\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:20:42.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:20:23.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:19:54.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Show.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Carts\\Show.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Carts\\Show.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Carts\\Show.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Carts\\Show.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:19:38.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Carts\\New.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Carts\\New.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Carts\\New.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Carts\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:14:28.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Carts\\Index.cshtml",
+              "RelativeDocumentMoniker": "ArticlesApp\\Views\\Carts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alexn\\Desktop\\ArticlesAppLab10\\ArticlesApp\\Views\\Carts\\Index.cshtml",
+              "RelativeToolTip": "ArticlesApp\\Views\\Carts\\Index.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwCoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T21:14:27.387Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1099,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

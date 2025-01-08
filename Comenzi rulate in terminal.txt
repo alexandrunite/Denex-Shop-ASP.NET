@@ -1,0 +1,5 @@
+--comenzi rulate in terminal
+
+docker run -d -p 8080:80 -v ${PWD}:/app -v ${PWD}/bin:/app/bin -v ${PWD}/obj:/app/obj --network aspnetwork --name DockerProjectContainer aspcoreproject
+
+docker run -d --name ShopDBContainer --network aspnetwork -e MYSQL_ROOT_PASSWORD=admin -e MYSQL_DATABASE=ShopDB -e MYSQL_USER=ShopUser -e MYSQL_PASSWORD=DeniselulAlex1! -p 3307:3306 mysql:8.0.31

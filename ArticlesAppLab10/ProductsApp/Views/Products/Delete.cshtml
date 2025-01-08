@@ -1,0 +1,17 @@
+﻿@model ProductsApp.Models.Product
+
+@{
+    ViewBag.Title = "Șterge Produs";
+}
+
+<h2>Șterge Produs</h2>
+
+<div class="alert alert-warning">
+    Ești sigur că dorești să trimiți o cerere de ștergere pentru produsul "@Model.Title"?
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Trimite Cerere de Ștergere</button>
+    <a asp-action="Index" class="btn btn-secondary">Anulează</a>
+</form>

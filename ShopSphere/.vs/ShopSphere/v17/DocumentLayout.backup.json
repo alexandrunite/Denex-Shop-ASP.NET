@@ -5,6 +5,33 @@
     {
       "AbsoluteMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|c:\\users\\alexn\\documents\\github\\daw-project-mihaila-nite\\shopsphere\\shopsphere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|solutionrelative:shopsphere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Migrations\\20241215143856_InitialMgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopSphere\\Migrations\\20241215143856_InitialMgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Data\\Migrations\\20241215143253_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopSphere\\Data\\Migrations\\20241215143253_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|c:\\users\\alexn\\documents\\github\\daw-project-mihaila-nite\\shopsphere\\shopsphere\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|solutionrelative:shopsphere\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|c:\\users\\alexn\\documents\\github\\daw-project-mihaila-nite\\shopsphere\\shopsphere\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|solutionrelative:shopsphere\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|c:\\users\\alexn\\documents\\github\\daw-project-mihaila-nite\\shopsphere\\shopsphere\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|solutionrelative:shopsphere\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|c:\\users\\alexn\\documents\\github\\daw-project-mihaila-nite\\shopsphere\\shopsphere\\shopsphere.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5A6BE49B-A2AB-4125-9172-1610D28B7E22}|ShopSphere\\ShopSphere.csproj|solutionrelative:shopsphere\\shopsphere.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexn\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ShopSphere-0065ced5-4156-4534-a4d1-f911709349c3\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +41,106 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241215143856_InitialMgr.cs",
+              "DocumentMoniker": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Migrations\\20241215143856_InitialMgr.cs",
+              "RelativeDocumentMoniker": "ShopSphere\\Migrations\\20241215143856_InitialMgr.cs",
+              "ToolTip": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Migrations\\20241215143856_InitialMgr.cs",
+              "RelativeToolTip": "ShopSphere\\Migrations\\20241215143856_InitialMgr.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAYwKEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:38:56.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20241215143253_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Data\\Migrations\\20241215143253_Initial.cs",
+              "RelativeDocumentMoniker": "ShopSphere\\Data\\Migrations\\20241215143253_Initial.cs",
+              "ToolTip": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Data\\Migrations\\20241215143253_Initial.cs",
+              "RelativeToolTip": "ShopSphere\\Data\\Migrations\\20241215143253_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:32:54.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ShopSphere\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\appsettings.Development.json",
+              "RelativeToolTip": "ShopSphere\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-15T13:23:10.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\alexn\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ShopSphere-0065ced5-4156-4534-a4d1-f911709349c3\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ShopSphere-0065ced5-4156-4534-a4d1-f911709349c3\\secrets.json",
+              "ToolTip": "C:\\Users\\alexn\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ShopSphere-0065ced5-4156-4534-a4d1-f911709349c3\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ShopSphere-0065ced5-4156-4534-a4d1-f911709349c3\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-15T13:46:08.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\appsettings.json",
+              "RelativeDocumentMoniker": "ShopSphere\\appsettings.json",
+              "ToolTip": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\appsettings.json",
+              "RelativeToolTip": "ShopSphere\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-29T08:04:04.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShopSphere.csproj",
+              "DocumentMoniker": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\ShopSphere.csproj",
+              "RelativeDocumentMoniker": "ShopSphere\\ShopSphere.csproj",
+              "ToolTip": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\ShopSphere.csproj",
+              "RelativeToolTip": "ShopSphere\\ShopSphere.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-29T06:58:31.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Dockerfile",
+              "RelativeDocumentMoniker": "ShopSphere\\Dockerfile",
+              "ToolTip": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Dockerfile",
+              "RelativeToolTip": "ShopSphere\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-29T06:58:59.838Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,10 +150,20 @@
               "RelativeDocumentMoniker": "ShopSphere\\Program.cs",
               "ToolTip": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ShopSphere\\ShopSphere\\Program.cs",
               "RelativeToolTip": "ShopSphere\\Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T10:08:51.211Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1099,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

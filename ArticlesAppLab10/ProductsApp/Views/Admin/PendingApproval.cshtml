@@ -1,0 +1,69 @@
+﻿@using ProductsApp.Models.Enums
+@model IEnumerable<ProductsApp.Models.ProductRequest>
+
+@{
+    ViewBag.Title = "Gestionare Cereri de Aprobare a Produselor";
+}
+
+<h2>Gestionare Cereri de Aprobare a Produselor</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Nu există cereri de aprobare.</div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tip Cerere</th>
+                <th>Colaborator</th>
+                <th>Titlu Propus</th>
+                <th>Descriere Propusă</th>
+                <th>Preț Propus</th>
+                <th>Stoc Propus</th>
+                <th>Imagine Propusă</th>
+                <th>Data Creării</th>
+                <th>Acțiuni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var request in Model)
+            {
+                <tr>
+                    <td>@request.Id</td>
+                    <td>@request.RequestType</td>
+                    <td>@request.Collaborator?.UserName ?? "N/A"</td>
+                    <td>@request.ProposedTitle</td>
+                    <td>@request.ProposedContent</td>
+                    <td>@(request.ProposedPrice.HasValue ? request.ProposedPrice.Value.ToString("C") : "N/A")</td>
+                    <td>@(request.ProposedStock.HasValue ? request.ProposedStock.Value.ToString() : "N/A")</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(request.ProposedImageUrl))
+                        {
+                            <img src="@request.ProposedImageUrl" alt="Imagine Propusă" style="max-width: 100px;" />
+                        }
+                        else
+                        {
+                            <span>N/A</span>
+                        }
+                    </td>
+                    <td>@request.DateCreated.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>
+                        <form asp-action="Approve" method="post" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@request.Id" />
+                            <button type="submit" class="btn btn-success btn-sm">Aproba</button>
+                        </form>
+                        <form asp-action="Reject" method="post" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@request.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Respinge</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
