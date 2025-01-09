@@ -38,6 +38,18 @@ namespace ProductsApp.Data
                 .WithMany(c => c.ProductCarts)
                 .HasForeignKey(pc => pc.CartId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            // Configurarea relației one-to-one între ApplicationUser și Cart
+            builder.Entity<ApplicationUser>()
+                .HasOne(a => a.Cart)
+                .WithOne(c => c.User)
+                .HasForeignKey<Cart>(c => c.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Adăugarea unei constrângeri de unicitate pe UserId în Cart
+            builder.Entity<Cart>()
+                .HasIndex(c => c.UserId)
+                .IsUnique();
         }
     }
 }

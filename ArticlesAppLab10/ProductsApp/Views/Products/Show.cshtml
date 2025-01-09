@@ -1,8 +1,6 @@
 ﻿@model ProductsApp.Models.Product
 
-
 @* Afisarea unui produs impreuna cu categoria din care face *@
-
 
 @if (TempData["message"] != null)
 {
@@ -25,9 +23,7 @@
             <a class="btn btn-success" asp-controller="Products" asp-action="Edit" asp-route-id="@Model.Id">Editeaza produs</a>
 
             <form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id">
-
                 <button class="btn btn-danger" type="submit">Sterge produs</button>
-
             </form>
 
         </div>
@@ -37,16 +33,14 @@
         <input type="hidden" name="ProductId" value="@Model.Id" />
         <div class="d-flex flex-row justify-content-center p-3 border-1 border-top">
             <div>
-                <select name="CartId" class="form-control">
-                    <option selected>Adauga acest produs intr-o colectie</option>
-                    @foreach (var cart in ViewBag.UserCarts)
-                    {
-                        <option value="@cart.Id">@cart.Name</option>
-                    }
-                </select>
+                @* Eliminăm selecția CartId deoarece fiecare utilizator are un singur cart *@
+                @* Dacă dorești să afișezi informații despre cart, le poți adăuga aici *@
             </div>
             <div>
-                <input type="submit" class="btn btn-success alert-success" value="+" />
+                <input type="number" name="Quantity" value="1" min="1" class="form-control" style="width: 80px;" />
+            </div>
+            <div>
+                <input type="submit" class="btn btn-success alert-success" value="Adaugă în Coș" />
             </div>
         </div>
     </form>
@@ -86,9 +80,7 @@
                         </div>
                         <div>
                             <form method="post" asp-controller="Reviews" asp-action="Delete" asp-route-id="@comm.Id">
-
                                 <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
-
                             </form>
                         </div>
                     </div>
@@ -118,7 +110,6 @@
             <div class="card">
 
                 <form method="post" asp-controller="Products" asp-action="Show">
-
                     <div class="card-body">
 
                         <input type="hidden" name="ProductId" value="@Model.Id" />
@@ -129,6 +120,13 @@
                         <textarea class="form-control" name="Content"></textarea>
 
                         <span asp-validation-for="Content" class="text-danger"></span>
+                        <br /><br />
+
+                        <label>Rating (1-5)</label>
+                        <br />
+                        <input type="number" name="Rating" min="1" max="5" class="form-control" style="width: 80px;" />
+
+                        <span asp-validation-for="Rating" class="text-danger"></span>
                         <br /><br />
 
                         <button class="btn btn-success" type="submit">Adauga comentariul</button>

@@ -1,4 +1,5 @@
-﻿using ProductsApp.Data;
+﻿// Controllers/UsersController.cs
+using ProductsApp.Data;
 using ProductsApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -89,6 +90,7 @@ namespace ProductsApp.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit(string id, ApplicationUser newData, [FromForm] string newRole)
         {
             if (id == null)
@@ -134,6 +136,7 @@ namespace ProductsApp.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Delete(string id)
         {
             if (id == null)
@@ -142,9 +145,9 @@ namespace ProductsApp.Controllers
             }
 
             var user = db.Users
-                         .Include(u => u.Products)
                          .Include(u => u.Reviews)
-                         .Include(u => u.Carts)
+                         .Include(u => u.Cart) // Înlocuim Carts cu Cart
+                         .Include(u => u.Products)
                          .FirstOrDefault(u => u.Id == id);
 
             if (user == null)
@@ -158,10 +161,10 @@ namespace ProductsApp.Controllers
                 db.Reviews.RemoveRange(user.Reviews);
             }
 
-            // Șterge coșurile utilizatorului
-            if (user.Carts != null && user.Carts.Any())
+            // Șterge coșul utilizatorului
+            if (user.Cart != null)
             {
-                db.Carts.RemoveRange(user.Carts);
+                db.Carts.Remove(user.Cart);
             }
 
             // Șterge produsele utilizatorului

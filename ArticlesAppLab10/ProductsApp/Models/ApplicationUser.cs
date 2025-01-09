@@ -12,8 +12,8 @@ namespace ProductsApp.Models
         // Un user poate posta mai multe produse
         public virtual ICollection<Product>? Products { get; set; }
 
-        // Un user poate să creeze mai multe colecții
-        public virtual ICollection<Cart>? Carts { get; set; }
+        // Relația one-to-one cu Cart
+        public virtual Cart? Cart { get; set; }
 
         // Atribute suplimentare adăugate pentru user
         public string? FirstName { get; set; }

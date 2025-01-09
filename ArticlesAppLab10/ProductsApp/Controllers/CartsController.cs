@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using static ProductsApp.Models.ProductCarts;
 
 namespace ProductsApp.Controllers
 {
@@ -25,7 +26,8 @@ namespace ProductsApp.Controllers
             _roleManager = roleManager;
         }
 
-        // List of carts
+        // List of carts (now single cart per user)
+        // Controllers/CartsController.cs
         public IActionResult Index()
         {
             if (TempData.ContainsKey("message"))
@@ -36,143 +38,87 @@ namespace ProductsApp.Controllers
 
             SetAccessRights();
 
-            List<Cart> carts;
-
             if (User.IsInRole("Admin"))
             {
-                carts = db.Carts.Include(c => c.User).ToList();
+                // Administratorul poate vedea toate coșurile
+                var carts = db.Carts.Include(c => c.User).ToList();
+                return View(carts);
             }
             else
             {
                 var userId = _userManager.GetUserId(User);
-                carts = db.Carts.Include(c => c.User)
-                                .Where(c => c.UserId == userId)
-                                .ToList();
+                var cart = db.Carts
+                            .Include(c => c.ProductCarts)
+                                .ThenInclude(pc => pc.Product)
+                            .FirstOrDefault(c => c.UserId == userId);
+
+                // Dacă coșul nu există, îl creăm automat
+                if (cart == null)
+                {
+                    cart = new Cart
+                    {
+                        UserId = userId,
+                        ProductCarts = new List<ProductCart>()
+                    };
+                    db.Carts.Add(cart);
+                    db.SaveChanges();
+                }
+
+                // Returnăm o listă care conține doar coșul utilizatorului
+                return View(new List<Cart> { cart });
             }
-
-            ViewBag.Carts = carts;
-
-            return View();
         }
 
-        // Show a single cart
-        public IActionResult Show(int id)
+
+        // Show a single cart (now single cart per user)
+        public IActionResult Show()
         {
             SetAccessRights();
 
-            Cart cart;
-
             if (User.IsInRole("Admin"))
             {
-                cart = db.Carts
-                        .Include(c => c.ProductCarts)
-                            .ThenInclude(pc => pc.Product)
-                                .ThenInclude(p => p.Category)
-                        .Include(c => c.ProductCarts)
-                            .ThenInclude(pc => pc.Product)
-                                .ThenInclude(p => p.User)
-                        .Include(c => c.User)
-                        .FirstOrDefault(c => c.Id == id);
+                // Pentru admin, trebuie să primească un parametru pentru a specifica ce cart să arate
+                // Adăugăm un parametru opțional
+                return NotFound("Pentru Admin, folosiți metoda Index pentru a vedea toate coșurile.");
             }
             else
             {
                 var userId = _userManager.GetUserId(User);
-                cart = db.Carts
-                        .Include(c => c.ProductCarts)
-                            .ThenInclude(pc => pc.Product)
-                                .ThenInclude(p => p.Category)
-                        .Include(c => c.ProductCarts)
-                            .ThenInclude(pc => pc.Product)
-                                .ThenInclude(p => p.User)
-                        .Include(c => c.User)
-                        .FirstOrDefault(c => c.Id == id && c.UserId == userId);
-            }
+                var cart = db.Carts
+                            .Include(c => c.ProductCarts)
+                                .ThenInclude(pc => pc.Product)
+                                    .ThenInclude(p => p.Category)
+                            .Include(c => c.ProductCarts)
+                                .ThenInclude(pc => pc.Product)
+                                    .ThenInclude(p => p.User)
+                            .Include(c => c.User)
+                            .FirstOrDefault(c => c.UserId == userId);
 
-            if (cart == null)
-            {
-                TempData["message"] = "Resursa căutată nu poate fi găsită";
-                TempData["messageType"] = "alert-danger";
-                return RedirectToAction("Index", "Products");
-            }
+                // Dacă coșul nu există, îl creăm automat
+                if (cart == null)
+                {
+                    cart = new Cart
+                    {
+                        UserId = userId,
+                        ProductCarts = new List<ProductCart>()
+                    };
+                    db.Carts.Add(cart);
+                    db.SaveChanges();
+                }
 
-            return View(cart);
-        }
-
-        // Show form to create a new cart
-        public IActionResult New()
-        {
-            return View();
-        }
-
-        // Add a new cart
-        [HttpPost]
-        public IActionResult New(Cart cart)
-        {
-            cart.UserId = _userManager.GetUserId(User);
-
-            if (ModelState.IsValid)
-            {
-                db.Carts.Add(cart);
-                db.SaveChanges();
-                TempData["message"] = "Colecția a fost adăugată";
-                TempData["messageType"] = "alert-success";
-                return RedirectToAction("Index");
-            }
-            else
-            {
                 return View(cart);
             }
         }
 
-        // Delete a cart
-        [HttpPost]
-        public IActionResult Delete(int id)
-        {
-            Cart cart;
-
-            if (User.IsInRole("Admin"))
-            {
-                cart = db.Carts.Include(c => c.ProductCarts)
-                               .FirstOrDefault(c => c.Id == id);
-            }
-            else
-            {
-                var userId = _userManager.GetUserId(User);
-                cart = db.Carts.Include(c => c.ProductCarts)
-                               .FirstOrDefault(c => c.Id == id && c.UserId == userId);
-            }
-
-            if (cart == null)
-            {
-                TempData["message"] = "Coșul nu a fost găsit";
-                TempData["messageType"] = "alert-danger";
-                return RedirectToAction("Index");
-            }
-
-            // Delete all ProductCarts
-            if (cart.ProductCarts != null && cart.ProductCarts.Any())
-            {
-                db.ProductCarts.RemoveRange(cart.ProductCarts);
-            }
-
-            // Delete the cart
-            db.Carts.Remove(cart);
-            db.SaveChanges();
-
-            TempData["message"] = "Coșul a fost șters";
-            TempData["messageType"] = "alert-success";
-            return RedirectToAction("Index");
-        }
-
         // Place order: update stock and clear cart
         [HttpPost]
-        public IActionResult PlaceOrder(int cartId)
+        public IActionResult PlaceOrder()
         {
+            var userId = _userManager.GetUserId(User);
             var cart = db.Carts
                         .Include(c => c.ProductCarts)
                             .ThenInclude(pc => pc.Product)
-                        .Where(c => c.Id == cartId && (User.IsInRole("Admin") || c.UserId == _userManager.GetUserId(User)))
-                        .FirstOrDefault();
+                        .FirstOrDefault(c => c.UserId == userId);
 
             if (cart == null)
             {
@@ -194,7 +140,7 @@ namespace ProductsApp.Controllers
                     {
                         TempData["message"] = $"Stoc insuficient pentru produsul {product.Title}";
                         TempData["messageType"] = "alert-danger";
-                        return RedirectToAction("Show", new { id = cartId });
+                        return RedirectToAction("Show");
                     }
                 }
             }
@@ -207,6 +153,8 @@ namespace ProductsApp.Controllers
             TempData["messageType"] = "alert-success";
             return RedirectToAction("Index", "Products");
         }
+
+                                    
 
         // Helper method to set access rights
         private void SetAccessRights()

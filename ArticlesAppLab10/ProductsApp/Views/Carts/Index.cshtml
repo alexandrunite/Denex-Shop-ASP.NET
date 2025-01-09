@@ -1,5 +1,11 @@
-﻿<br />
-<br />
+﻿<!-- Views/Carts/Index.cshtml -->
+@model IEnumerable<ProductsApp.Models.Cart>
+
+@{
+    ViewData["Title"] = "Coșuri de Cumpărături";
+}
+
+<h1>Coșuri de Cumpărături</h1>
 
 @if (TempData["message"] != null)
 {
@@ -8,36 +14,66 @@
     </div>
 }
 
-<br />
-
-<a asp-controller="Carts" asp-action="New" class="btn btn-success rounded-pill mb-5">
-    <i class="bi bi-plus"></i> Adăugare cart
-</a>
-
 <div class="row">
-
-    @foreach (var cart in ViewBag.Carts)
+    @foreach (var cart in Model)
     {
-        <div class="col-4 mb-4">
-
+        <div class="col-12 mb-4">
             <div class="card">
-
                 <div class="card-body">
-                    
-                    <h5 class="card-title" name="Name">@cart.Name</h5>
+                    <h5 class="card-title">Coș #@cart.Id</h5>
 
-                        @if (ViewBag.EsteAdmin)
-                        {
-                            <div><i class="bi bi-person"> Creat de: </i> @cart.User.UserName</div>
-                        }        
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <div><i class="bi bi-person"></i> Creat de: @cart.User.UserName</div>
+                    }
 
                     <br />
 
-                    <a asp-controller="Carts" asp-action="Show" asp-route-id="@cart.Id" class="btn alert-success">Afisare Colectie</a>
+                    <h6>Produse în Coș:</h6>
 
+                    @if (cart.ProductCarts != null && cart.ProductCarts.Any())
+                    {
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Produs</th>
+                                    <th>Cantitate</th>
+                                    <th>Preț Unitar</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var productCart in cart.ProductCarts)
+                                {
+                                    <tr>
+                                        <td>@productCart.Product.Title</td>
+                                        <td>@productCart.Quantity</td>
+                                        <td>@productCart.Product.Price.ToString("C")</td>
+                                        <td>@(productCart.Quantity * productCart.Product.Price).ToString("C")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                        <div class="text-end">
+                            <strong>Total:</strong> @cart.ProductCarts.Sum(pc => pc.Quantity * pc.Product.Price).ToString("C")
+                        </div>
+
+                        @if (!User.IsInRole("Admin"))
+                        {
+                            <div class="mt-4 text-center">
+                                <form asp-controller="Carts" asp-action="PlaceOrder" method="post">
+                                    <button type="submit" class="btn btn-primary">Plasează Comanda</button>
+                                </form>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p>Nu există produse în acest coș.</p>
+                    }
                 </div>
             </div>
         </div>
     }
-
 </div>

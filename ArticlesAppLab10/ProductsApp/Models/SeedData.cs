@@ -1,6 +1,7 @@
 ﻿using ProductsApp.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using static ProductsApp.Models.ProductCarts;
 
 // PASUL 4: useri si roluri
 
@@ -84,6 +85,18 @@ namespace ProductsApp.Models
                     UserId = "8e445865-a24d-4543-a6c6-9443d048cdb2"
                 }
                 );
+
+                foreach (var user in context.Users)
+                {
+                    if (!context.Carts.Any(c => c.UserId == user.Id))
+                    {
+                        context.Carts.Add(new Cart
+                        {
+                            UserId = user.Id,
+                            ProductCarts = new List<ProductCart>()
+                        });
+                    }
+                }
 
                 context.SaveChanges();
             }

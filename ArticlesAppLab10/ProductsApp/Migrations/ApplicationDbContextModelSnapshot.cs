@@ -236,16 +236,13 @@ namespace ProductsApp.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("UserId")
                         .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Carts");
                 });
@@ -489,8 +486,9 @@ namespace ProductsApp.Migrations
             modelBuilder.Entity("ProductsApp.Models.Cart", b =>
                 {
                     b.HasOne("ProductsApp.Models.ApplicationUser", "User")
-                        .WithMany("Carts")
-                        .HasForeignKey("UserId");
+                        .WithOne("Cart")
+                        .HasForeignKey("ProductsApp.Models.Cart", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("User");
                 });
@@ -573,7 +571,7 @@ namespace ProductsApp.Migrations
 
             modelBuilder.Entity("ProductsApp.Models.ApplicationUser", b =>
                 {
-                    b.Navigation("Carts");
+                    b.Navigation("Cart");
 
                     b.Navigation("Products");
 

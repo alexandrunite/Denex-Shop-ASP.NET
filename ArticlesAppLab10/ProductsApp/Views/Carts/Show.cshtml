@@ -1,50 +1,72 @@
-﻿@model ProductsApp.Models.Cart
+﻿<!-- Views/Carts/Show.cshtml -->
+@model ProductsApp.Models.Cart
 
-<div class="row">
+@{
+    ViewData["Title"] = "Detalii Coș";
+}
 
-    <div class="col-12">
+<h1>Detalii Coș</h1>
 
-        <h5 class="card-title mt-5 mb-3" asp-for="Name">@Model.Name</h5>
-
-        @if (ViewBag.EsteAdmin)
-        {
-            <i class="bi bi-person"> Creat de: </i> @Model.User.UserName
-        }
-
-        <br /><br />
-        Produse in colectie:
-        <br /><br />
+@if (TempData["message"] != null)
+{
+    <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-5">
+        @ViewBag.Message
     </div>
-    <br />
+}
 
-    @if (Model.ProductCarts.Count > 0)
-    {
-        @foreach (var productCart in Model.ProductCarts)
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Coș #@Model.Id</h5>
+
+        @if (User.IsInRole("Admin"))
         {
-            <div class="col-12">
-                <div class="card" style="width: 100%;">
-                    @* Afișare informații produs *@
-                    <div class="card-body">
-                        <partial name="ProductInfo" model="productCart.Product" />
-                    </div>
-                </div>
-                <br /><br />
-            </div>
+            <div><i class="bi bi-person"></i> Creat de: @Model.User.UserName</div>
         }
 
-        @* Formular pentru plasarea comenzii *@
-        <div class="col-12 text-center mt-4">
-            <form asp-action="PlaceOrder" method="post">
-                <input type="hidden" name="cartId" value="@Model.Id" />
-                <button type="submit" class="btn btn-primary">Plasează Comanda</button>
-            </form>
-        </div>
-    }
-    else
-    {
-        <div class="col-12">
-            <p>Nu există produse în această colecție.</p>
-        </div>
-    }
+        <br />
 
+        <h6>Produse în Coș:</h6>
+
+        @if (Model.ProductCarts != null && Model.ProductCarts.Any())
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Produs</th>
+                        <th>Cantitate</th>
+                        <th>Preț Unitar</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var productCart in Model.ProductCarts)
+                    {
+                        <tr>
+                            <td>@productCart.Product.Title</td>
+                            <td>@productCart.Quantity</td>
+                            <td>@productCart.Product.Price.ToString("C")</td>
+                            <td>@(productCart.Quantity * productCart.Product.Price).ToString("C")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="text-end">
+                <strong>Total:</strong> @Model.ProductCarts.Sum(pc => pc.Quantity * pc.Product.Price).ToString("C")
+            </div>
+
+            @if (!User.IsInRole("Admin"))
+            {
+                <div class="mt-4 text-center">
+                    <form asp-action="PlaceOrder" method="post">
+                        <button type="submit" class="btn btn-primary">Plasează Comanda</button>
+                    </form>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Nu există produse în acest coș.</p>
+        }
+    </div>
 </div>

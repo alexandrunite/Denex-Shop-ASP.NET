@@ -13,7 +13,6 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using ProductsApp.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 using static ProductsApp.Models.ProductCarts;
 
@@ -93,8 +92,6 @@ namespace ProductsApp.Controllers
             return View(paginatedProducts);
         }
 
-
-
         #endregion
 
         #region Show
@@ -127,11 +124,18 @@ namespace ProductsApp.Controllers
                 return RedirectToAction("Index");
             }
 
-            // Coșurile utilizatorului
-            var userCarts = _context.Carts
-                .Where(c => c.UserId == userId)
-                .ToList();
-            ViewBag.UserCarts = userCarts;
+            // Obține coșul utilizatorului
+            var cart = _context.Carts
+                .Include(c => c.ProductCarts)
+                    .ThenInclude(pc => pc.Product)
+                        .ThenInclude(p => p.Category)
+                .Include(c => c.ProductCarts)
+                    .ThenInclude(pc => pc.Product)
+                        .ThenInclude(p => p.User)
+                .Include(c => c.User)
+                .FirstOrDefault(c => c.UserId == userId);
+
+            ViewBag.Cart = cart;
 
             // Accesul la butoane
             ViewBag.AfisareButoane = isAdmin || (isColaborator && product.UserId == userId);
@@ -189,11 +193,18 @@ namespace ProductsApp.Controllers
 
             if (productModel != null)
             {
-                // Coșurile utilizatorului
-                var userCarts = _context.Carts
-                    .Where(c => c.UserId == _userManager.GetUserId(User))
-                    .ToList();
-                ViewBag.UserCarts = userCarts;
+                // Obține coșul utilizatorului
+                var cart = _context.Carts
+                    .Include(c => c.ProductCarts)
+                        .ThenInclude(pc => pc.Product)
+                            .ThenInclude(p => p.Category)
+                    .Include(c => c.ProductCarts)
+                        .ThenInclude(pc => pc.Product)
+                            .ThenInclude(p => p.User)
+                    .Include(c => c.User)
+                    .FirstOrDefault(c => c.UserId == _userManager.GetUserId(User));
+
+                ViewBag.Cart = cart;
 
                 // Accesul la butoane
                 bool isAdmin = User.IsInRole("Admin");
@@ -627,7 +638,7 @@ namespace ProductsApp.Controllers
         // POST: Products/AddCart
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult AddCart([Bind("ProductId,CartId,Quantity")] ProductCart productCart)
+        public IActionResult AddCart([Bind("ProductId,Quantity")] ProductCart productCart)
         {
             if (!User.Identity.IsAuthenticated)
             {
@@ -646,8 +657,25 @@ namespace ProductsApp.Controllers
                 return RedirectToAction("Show", new { id = productCart.ProductId });
             }
 
+            // Obține coșul utilizatorului
+            var cart = _context.Carts
+                        .Include(c => c.ProductCarts)
+                        .FirstOrDefault(c => c.UserId == userId);
+
+            if (cart == null)
+            {
+                // Deși coșul ar trebui creat automat la înregistrare, verificăm pentru siguranță
+                cart = new Cart
+                {
+                    UserId = userId,
+                    ProductCarts = new List<ProductCart>()
+                };
+                _context.Carts.Add(cart);
+                _context.SaveChanges();
+            }
+
             var existingProductCart = _context.ProductCarts
-                .FirstOrDefault(pc => pc.ProductId == productCart.ProductId && pc.CartId == productCart.CartId);
+                .FirstOrDefault(pc => pc.ProductId == productCart.ProductId && pc.CartId == cart.Id);
 
             if (existingProductCart != null)
             {
@@ -661,6 +689,7 @@ namespace ProductsApp.Controllers
             }
             else
             {
+                productCart.CartId = cart.Id;
                 productCart.CartDate = DateTime.Now;
                 _context.ProductCarts.Add(productCart);
                 _context.SaveChanges();

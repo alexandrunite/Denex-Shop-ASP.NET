@@ -8,10 +8,7 @@ namespace ProductsApp.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Numele colecției este obligatoriu")]
-        public string Name { get; set; }
-
-        // O colecție este creată de către un user
+        // Relația one-to-one cu ApplicationUser
         public string? UserId { get; set; }
         public virtual ApplicationUser? User { get; set; }
 
