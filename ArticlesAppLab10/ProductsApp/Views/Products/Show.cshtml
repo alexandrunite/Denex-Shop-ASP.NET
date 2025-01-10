@@ -1,7 +1,5 @@
 ﻿@model ProductsApp.Models.Product
 
-@* Afisarea unui produs impreuna cu categoria din care face *@
-
 @if (TempData["message"] != null)
 {
     <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-5">
@@ -13,29 +11,50 @@
 
 <div class="card">
 
-    <partial name="ProductInfo" model="Model"></partial>
+    <!-- Afișăm imaginea produsului înainte de titlu -->
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <div class="text-center">
+            <img src="@Model.ImageUrl" class="img-fluid mb-3" alt="Imaginea produsului" style="max-width: 300px; max-height: 300px; object-fit: cover;" />
+        </div>
+    }
+
+    <!-- Titlul produsului -->
+    <h3 class="card-title alert-success py-3 px-3 rounded-2 text-center">@Model.Title</h3>
+
+   
+    <div class="card-body">
+        <!-- Conținutul produsului -->
+        <div class="card-text">@Html.Raw(Model.Content)</div>
+
+        <!-- Prețul produsului -->
+        <p class="text-center mt-2"><strong>Preț:</strong> @Model.Price.ToString("0.00") RON</p>
+
+        <!-- Informații suplimentare despre produs -->
+        <div class="d-flex justify-content-between flex-row mt-5">
+            <div><i class="bi bi-globe"></i> @Model.Category.CategoryName</div>
+            <div><i class="bi bi-person"></i> @(Model.User != null ? Model.User.UserName : "Utilizator necunoscut")</div>
+            <span class="alert-success">@Model.Date</span>
+        </div>
+
+        <!-- Rating-ul produsului -->
+        <p class="mt-3 text-center"><strong>Rating produs:</strong> @(Model.Rating.HasValue ? Model.Rating.Value.ToString("0.0") : "N/A")</p>
+    </div>
 
     @if ((ViewBag.AfisareButoane == true && Model.UserId == ViewBag.UserCurent)
     || ViewBag.EsteAdmin == true)
     {
-        <div class="d-flex flex-row justify-content-between">
-
-            <a class="btn btn-success" asp-controller="Products" asp-action="Edit" asp-route-id="@Model.Id">Editeaza produs</a>
-
+        <div class="d-flex flex-row justify-content-between p-3">
+            <a class="btn btn-success" asp-controller="Products" asp-action="Edit" asp-route-id="@Model.Id">Editează produs</a>
             <form method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id">
-                <button class="btn btn-danger" type="submit">Sterge produs</button>
+                <button class="btn btn-danger" type="submit">Șterge produs</button>
             </form>
-
         </div>
     }
 
     <form method="post" asp-controller="Products" asp-action="AddCart">
         <input type="hidden" name="ProductId" value="@Model.Id" />
         <div class="d-flex flex-row justify-content-center p-3 border-1 border-top">
-            <div>
-                @* Eliminăm selecția CartId deoarece fiecare utilizator are un singur cart *@
-                @* Dacă dorești să afișezi informații despre cart, le poți adăuga aici *@
-            </div>
             <div>
                 <input type="number" name="Quantity" value="1" min="1" class="form-control" style="width: 80px;" />
             </div>
@@ -50,97 +69,65 @@
 <br />
 <br />
 
-@* Afisare comentarii impreuna cu butoanele de editare si stergere *@
+@* Afisare comentarii *@
 
 @foreach (var comm in Model.Reviews)
 {
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
-
             <div class="col-md-8">
-
                 <div>
-
                     <p>@comm.Content</p>
+                    <p><strong>Rating:</strong> @(comm.Rating.HasValue ? comm.Rating.Value.ToString() : "N/A")</p>
                     <small>@comm.Date</small>
                     <strong><i class="bi bi-person"> @comm.User.UserName</i></strong>
-
                 </div>
                 <br>
-
                 @if (comm.UserId == ViewBag.UserCurent || ViewBag.EsteAdmin == true)
                 {
                     <div class="d-flex">
                         <div>
                             <a class="btn btn-outline-primary" asp-controller="Reviews" asp-action="Edit" asp-route-id="@comm.Id">
-                                <i class="bi bi-pencil-square"></i> Editeaza
+                                <i class="bi bi-pencil-square"></i> Editează
                             </a>
-
                         </div>
                         <div>
                             <form method="post" asp-controller="Reviews" asp-action="Delete" asp-route-id="@comm.Id">
-                                <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
+                                <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i> Șterge</button>
                             </form>
                         </div>
                     </div>
                 }
-
                 <br />
             </div>
-
             <div class="col-md-2"></div>
-
         </div>
-
     </div>
 }
 
-
 @* Afisarea formularului in care se poate adauga un comentariu *@
-
 <div class="container">
-
     <div class="row">
-
         <div class="col-md-2"></div>
-
         <div class="col-md-8">
-
             <div class="card">
-
                 <form method="post" asp-controller="Products" asp-action="Show">
                     <div class="card-body">
-
                         <input type="hidden" name="ProductId" value="@Model.Id" />
-
-                        <label>Continut comentariu</label>
-                        <br />
-
+                        <label>Conținut comentariu</label>
                         <textarea class="form-control" name="Content"></textarea>
-
                         <span asp-validation-for="Content" class="text-danger"></span>
                         <br /><br />
-
                         <label>Rating (1-5)</label>
-                        <br />
                         <input type="number" name="Rating" min="1" max="5" class="form-control" style="width: 80px;" />
-
                         <span asp-validation-for="Rating" class="text-danger"></span>
                         <br /><br />
-
-                        <button class="btn btn-success" type="submit">Adauga comentariul</button>
-
+                        <button class="btn btn-success" type="submit">Adaugă comentariul</button>
                     </div>
-
                 </form>
-
             </div>
-
         </div>
-
         <div class="col-md-2"></div>
-
     </div>
-
 </div>

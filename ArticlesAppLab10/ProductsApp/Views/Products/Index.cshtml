@@ -70,16 +70,27 @@
 @foreach (var product in Model)
 {
     <div class="card">
+        <div class="card-img-top-container" style="width: 100%; max-height: 20vw; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+            @if (!string.IsNullOrEmpty(product.ImageUrl))
+            {
+                <img src="@product.ImageUrl" class="card-img-top" alt="Imaginea produsului" style="width: auto; height: 100%; object-fit: cover;" />
+            }
+        </div>
 
         <partial name="ProductInfo" model="product"></partial>
 
-        <a class="btn btn-success" asp-controller="Products" asp-action="Show" asp-route-id="@product.Id">Afisare produs</a>
+        <div class="card-body">
+            <p><strong>Preț:</strong> @product.Price.ToString("0.00") RON</p>
+            <p><strong>Rating:</strong> @(product.Rating.HasValue ? product.Rating.Value.ToString("0.0") : "N/A")</p>
+        </div>
 
-    </div>  
+        <a class="btn btn-success" asp-controller="Products" asp-action="Show" asp-route-id="@product.Id">Afisare produs</a>
+    </div>
 
     <br />
     <br />
 }
+
 
 @* Afisarea paginata a produselor *@
 
