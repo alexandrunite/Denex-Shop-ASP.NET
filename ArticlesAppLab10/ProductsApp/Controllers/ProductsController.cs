@@ -18,7 +18,8 @@ using static ProductsApp.Models.ProductCarts;
 
 namespace ProductsApp.Controllers
 {
-    [Authorize(Roles = "User,Colaborator,Admin")]
+    // Eliminăm atributul [Authorize] de la nivel de clasă
+    // [Authorize(Roles = "User,Colaborator,Admin")]
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -39,6 +40,7 @@ namespace ProductsApp.Controllers
         #region Index
 
         // GET: Products
+        [AllowAnonymous]
         public IActionResult Index(string search, string sortOrder, int page = 1)
         {
             _logger.LogInformation("Accesare Index.cshtml cu parametrii: search={Search}, sortOrder={SortOrder}, page={Page}", search, sortOrder, page);
@@ -97,6 +99,7 @@ namespace ProductsApp.Controllers
         #region Show
 
         // GET: Products/Show/5
+        [AllowAnonymous]
         public IActionResult Show(int id)
         {
             bool isAdmin = User.IsInRole("Admin");
@@ -117,15 +120,16 @@ namespace ProductsApp.Controllers
                 return RedirectToAction("Index");
             }
 
-            if (!isAdmin && !product.IsApproved && !(isColaborator && product.UserId == userId))
+            // Condiție pentru a permite vizualizarea produsului de către utilizatorii neînregistrați
+            if (!product.IsApproved && !(isAdmin || (isColaborator && product.UserId == userId)))
             {
                 TempData["message"] = "Produsul nu este aprobat și nu poate fi vizualizat";
                 TempData["Alert"] = "danger";
                 return RedirectToAction("Index");
             }
 
-            // Obține coșul utilizatorului
-            var cart = _context.Carts
+            // Obține coșul utilizatorului dacă este autentificat
+            var cart = User.Identity.IsAuthenticated ? _context.Carts
                 .Include(c => c.ProductCarts)
                     .ThenInclude(pc => pc.Product)
                         .ThenInclude(p => p.Category)
@@ -133,7 +137,7 @@ namespace ProductsApp.Controllers
                     .ThenInclude(pc => pc.Product)
                         .ThenInclude(p => p.User)
                 .Include(c => c.User)
-                .FirstOrDefault(c => c.UserId == userId);
+                .FirstOrDefault(c => c.UserId == userId) : null;
 
             ViewBag.Cart = cart;
 
@@ -152,17 +156,11 @@ namespace ProductsApp.Controllers
         }
 
         // POST: Products/Show (Adăugare Review)
+        [Authorize(Roles = "User,Colaborator,Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Show([Bind("ProductId,Content,Rating")] Review review)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                TempData["message"] = "Trebuie să fii autentificat pentru a lăsa un review!";
-                TempData["Alert"] = "alert-danger";
-                return RedirectToAction("Register", "Account", new { area = "Identity" });
-            }
-
             string userId = _userManager.GetUserId(User);
             review.UserId = userId;
             review.Date = DateTime.Now;
@@ -243,12 +241,12 @@ namespace ProductsApp.Controllers
         }
 
         // POST: Products/New
-        [HttpPost]
         [Authorize(Roles = "Colaborator,Admin")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> New(ProductCreateViewModel viewModel)
         {
-            // Eliminăm validarea pentru 'Categories'
+            // Eliminăm validarea pentru 'Categories' deoarece nu este nevoie
             ModelState.Remove("Categories");
 
             if (ModelState.IsValid)
@@ -468,8 +466,8 @@ namespace ProductsApp.Controllers
         }
 
         // POST: Products/Edit/5
-        [HttpPost]
         [Authorize(Roles = "Colaborator,Admin")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, ProductEditViewModel viewModel)
         {
@@ -477,6 +475,9 @@ namespace ProductsApp.Controllers
             {
                 return NotFound();
             }
+
+            // Eliminăm validarea pentru 'Categories'
+            ModelState.Remove("Categories");
 
             if (ModelState.IsValid)
             {
@@ -565,6 +566,11 @@ namespace ProductsApp.Controllers
                         return View(viewModel);
                     }
                 }
+                else
+                {
+                    // Dacă nu se încarcă o nouă imagine, păstrează imaginea existentă
+                    request.ProposedImageUrl = product.ImageUrl;
+                }
 
                 _context.ProductRequests.Add(request);
                 await _context.SaveChangesAsync();
@@ -589,8 +595,8 @@ namespace ProductsApp.Controllers
         #region Delete
 
         // POST: Products/Delete/5
-        [HttpPost]
         [Authorize(Roles = "Colaborator,Admin")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
@@ -636,17 +642,11 @@ namespace ProductsApp.Controllers
         #region AddCart
 
         // POST: Products/AddCart
+        [Authorize(Roles = "User,Colaborator,Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult AddCart([Bind("ProductId,Quantity")] ProductCart productCart)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                TempData["message"] = "Trebuie să fii autentificat pentru a adăuga produse în coș!";
-                TempData["Alert"] = "alert-danger";
-                return RedirectToAction("Register", "Account", new { area = "Identity" });
-            }
-
             string userId = _userManager.GetUserId(User);
 
             var product = _context.Products.Find(productCart.ProductId);
@@ -664,7 +664,7 @@ namespace ProductsApp.Controllers
 
             if (cart == null)
             {
-                // Deși coșul ar trebui creat automat la înregistrare, verificăm pentru siguranță
+                // Coșul ar trebui creat automat la înregistrare, dar verificăm pentru siguranță
                 cart = new Cart
                 {
                     UserId = userId,

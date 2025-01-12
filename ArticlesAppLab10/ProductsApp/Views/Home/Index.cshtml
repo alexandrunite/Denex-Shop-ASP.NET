@@ -1,40 +1,74 @@
 ﻿
+@{
+    ViewData["Title"] = "Home";
+    // Suppose you have a dictionary:
+    // ViewBag.TabbedProducts = new Dictionary<string, List<Product>>
+    // keyed by CategoryName or something similar.
+}
 
-<div class="row">
-    <div class="col-12">
-        <div class="bg-light rounded-3 p-5 mb-4">
-            <div class="row">
-                <div class="col-md-8">
-                    <h1 class="font-roboto display-5 fw-bold">@Html.Raw(ViewBag.FirstProduct.Title)</h1>
-                    <div class="font-montserrat mb-3 truncate">@Html.Raw(ViewBag.FirstProduct.Content)</div>
-                    <a href="/Products/Show/@ViewBag.FirstProduct.Id" class="btn btn-outline-success">Vezi produsul</a>
-                </div>
-                <div class="col-md-4">
-                    <img src="https://icon-library.com/images/newspaper-png-icon/newspaper-png-icon-15.jpg" class="img-fluid align-items-center justify-content-center" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<div class="row mb-4">
-    @foreach (var product in ViewBag.Products)
+<!-- TAB NAVIGATION -->
+<ul class="nav nav-tabs" id="homeTab" role="tablist">
+    @foreach (var categoryName in ViewBag.TabbedProducts.Keys)
     {
-        <div class="col-6 row-style">
-            <div class="card">
-                <div class="card-title p-3 text-center bg-dark text-white">
-                    <h4>@Html.Raw(product.Title)</h4>
-                </div>
+        var firstCategory = ViewBag.TabbedProducts.Keys.First();
+        bool isActive = (categoryName == firstCategory);
 
-                <div class="card-body">
-                    <div class="font-montserrat truncate">@Html.Raw(product.Content)</div>
-                </div>
-                <div class="card-footer">
-                    <a class="btn btn-outline-success" href="/Products/Show/@product.Id">Vezi Produsul</a>
-                </div>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(isActive ? "active" : "")"
+                    id="@categoryName-Tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#@categoryName"
+                    type="button"
+                    role="tab"
+                    aria-controls="@categoryName"
+                    aria-selected="@isActive">
+                @categoryName
+            </button>
+        </li>
+    }
+</ul>
+
+<!-- TAB CONTENT -->
+<div class="tab-content" id="homeTabContent">
+    @foreach (var categoryName in ViewBag.TabbedProducts.Keys)
+    {
+        var firstCategory = ViewBag.TabbedProducts.Keys.First();
+        bool isActive = (categoryName == firstCategory);
+
+        <div class="tab-pane fade @(isActive ? "show active" : "")"
+             id="@categoryName"
+             role="tabpanel"
+             aria-labelledby="@categoryName-Tab">
+
+            <div class="row mt-3">
+                @foreach (var product in ViewBag.TabbedProducts[categoryName])
+                {
+                    <div class="col-md-3">
+                        <div class="card mb-4">
+                            <div class="card-img-top-container" style="height: 200px; overflow: hidden;">
+                                @if (!string.IsNullOrEmpty(product.ImageUrl))
+                                {
+                                    <img src="@product.ImageUrl" class="card-img-top"
+                                         alt="Imaginea produsului"
+                                         style="height: 100%; width: auto; object-fit: cover;" />
+                                }
+                            </div>
+                            <div class="card-body text-center">
+                                <h5>@product.Title</h5>
+                                <p class="text-muted">Preț: @product.Price.ToString("0.00") Lei</p>
+
+                                <!-- Add to cart directly from home screen -->
+                                <form asp-controller="Products" asp-action="AddCart" method="post">
+                                    <input type="hidden" name="ProductId" value="@product.Id" />
+                                    <input type="number" name="Quantity" value="1" min="1" class="form-control mb-2" style="max-width: 80px; margin: 0 auto;" />
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-basket"></i> Adaugă în coș
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     }

@@ -42,53 +42,85 @@ namespace ProductsApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Approve(int id)
         {
+            _logger.LogInformation("Încercare de aprobare a cererii cu ID: {RequestId}", id);
+
             var request = _context.ProductRequests
                 .Include(pr => pr.Collaborator)
-                .FirstOrDefault(pr => pr.Id == id && pr.RequestType == RequestType.Add && pr.Status == RequestStatus.Pending);
+                .FirstOrDefault(pr => pr.Id == id && pr.Status == RequestStatus.Pending);
 
             if (request == null)
             {
+                _logger.LogWarning("Cererea cu ID {RequestId} nu a fost găsită sau nu este pending.", id);
                 TempData["message"] = "Cererea nu a fost găsită.";
                 TempData["Alert"] = "danger";
                 return RedirectToAction(nameof(PendingApproval));
             }
 
-            // Verifică dacă ProposedCategoryId este setat
+            // Verifică dacă categoria propusă este setată
             if (!request.ProposedCategoryId.HasValue)
             {
+                _logger.LogWarning("Categoria propusă nu este setată pentru cererea ID: {RequestId}", id);
                 TempData["message"] = "Categoria propusă nu este setată.";
                 TempData["Alert"] = "danger";
                 return RedirectToAction(nameof(PendingApproval));
             }
 
-            // Crearea produsului aprobat
-            var product = new Product
+            if (request.RequestType == RequestType.Add)
             {
-                Title = request.ProposedTitle,
-                Content = request.ProposedContent,
-                Price = request.ProposedPrice ?? 0,
-                Stock = request.ProposedStock ?? 0,
-                ImageUrl = request.ProposedImageUrl,
-                CategoryId = request.ProposedCategoryId.Value, // Folosește ProposedCategoryId corect
-                UserId = request.CollaboratorId,
-                Date = DateTime.Now,
-                IsApproved = true
-            };
+                // Procesare cerere de adăugare
+                var product = new Product
+                {
+                    Title = request.ProposedTitle,
+                    Content = request.ProposedContent,
+                    Price = request.ProposedPrice ?? 0,
+                    Stock = request.ProposedStock ?? 0,
+                    ImageUrl = request.ProposedImageUrl,
+                    CategoryId = request.ProposedCategoryId.Value,
+                    UserId = request.CollaboratorId,
+                    Date = DateTime.Now,
+                    IsApproved = true
+                };
 
-            _context.Products.Add(product);
+                _context.Products.Add(product);
+                _logger.LogInformation("Cererea de adăugare a fost aprobată și produsul a fost adăugat.");
+            }
+            else if (request.RequestType == RequestType.Edit)
+            {
+                // Procesare cerere de editare
+                var existingProduct = _context.Products.Find(request.ProductId);
+                if (existingProduct == null)
+                {
+                    _logger.LogWarning("Produsul cu ID {ProductId} nu a fost găsit pentru cererea ID: {RequestId}", request.ProductId, id);
+                    TempData["message"] = "Produsul nu a fost găsit.";
+                    TempData["Alert"] = "danger";
+                    return RedirectToAction(nameof(PendingApproval));
+                }
 
-            // Actualizarea stării cererii
+                existingProduct.Title = request.ProposedTitle;
+                existingProduct.Content = request.ProposedContent;
+                existingProduct.Price = request.ProposedPrice ?? existingProduct.Price;
+                existingProduct.Stock = request.ProposedStock ?? existingProduct.Stock;
+                existingProduct.CategoryId = request.ProposedCategoryId.Value;
+                existingProduct.ImageUrl = request.ProposedImageUrl ?? existingProduct.ImageUrl;
+                existingProduct.Date = DateTime.Now; // Actualizează data dacă este necesar
+
+                _context.Products.Update(existingProduct);
+                _logger.LogInformation("Cererea de editare a fost aprobată și produsul a fost actualizat.");
+            }
+
+            // Actualizează starea cererii la Aprobat
             request.Status = RequestStatus.Approved;
             _context.ProductRequests.Update(request);
 
             _context.SaveChanges();
 
-            _logger.LogInformation("Cererea cu ID {RequestId} a fost aprobată și produsul a fost adăugat.", id);
+            _logger.LogInformation("Cererea cu ID {RequestId} a fost aprobată.", id);
 
-            TempData["message"] = "Cererea a fost aprobată și produsul a fost adăugat!";
+            TempData["message"] = "Cererea a fost aprobată!";
             TempData["Alert"] = "success";
             return RedirectToAction(nameof(PendingApproval));
         }
+
 
         // POST: Admin/Reject/5
         [HttpPost]

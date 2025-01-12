@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -34,6 +35,7 @@ namespace ProductsApp.Models.ViewModels
 
         public string? ImageUrl { get; set; }
 
+        [BindNever] // Adăugăm acest atribut pentru a preveni validarea
         public IEnumerable<SelectListItem> Categories { get; set; }
     }
 }
