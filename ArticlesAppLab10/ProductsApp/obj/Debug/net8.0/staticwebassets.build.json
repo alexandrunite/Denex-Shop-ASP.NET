@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rReGIfkli/BsFbh4tD7K/or+OH0PV3oPdLA/rSvB548=",
+  "Hash": "8FvaUZmRn5XeSetArcTE4BxGjf3oglfAuahEoMluLsg=",
   "Source": "ProductsApp",
   "BasePath": "_content/ProductsApp",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\0f652680-0dc5-479b-9323-a29dedbb38cc_Screenshot_2024-11-10_134614.png",
+      "SourceId": "ProductsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "BasePath": "_content/ProductsApp",
+      "RelativePath": "images/0f652680-0dc5-479b-9323-a29dedbb38cc_Screenshot_2024-11-10_134614.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0f652680-0dc5-479b-9323-a29dedbb38cc_Screenshot_2024-11-10_134614.png"
     },
     {
       "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\14db3faf-22cb-482a-8073-f752dcca401c_Screenshot_2025-01-08_173655.png",

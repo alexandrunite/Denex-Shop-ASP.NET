@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Permanent+Marker&family=Roboto&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Permanent+Marker&family=Roboto&display=swap');
 
 
 html {
@@ -84,6 +84,79 @@ a.nav-link {
     -moz-box-orient: vertical;
     /* Limit the text block to x lines */
     -webkit-line-clamp: 5;
+    text-overflow
 }
 
+/* Ensure product titles are consistently truncated */
+.card-title.truncate {
+    font-size: 1rem;
+    font-weight: bold;
+}
 
+/* Adjust card height to be uniform */
+.card.h-100 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adjust card body to expand and push the button to the bottom */
+.card-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Customize the carousel controls for better visibility */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    /* Pentru ecrane mici, afișează 1 produs pe slide */
+    #productCarousel .carousel-inner .row .col-md-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    /* Pentru ecrane medii, afișează 3 produse pe slide */
+    #productCarousel .carousel-inner .row .col-md-2 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Pentru ecrane mari, afișează 5 produse pe slide */
+    #productCarousel .carousel-inner .row .col-md-2 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/* Hover effects for buttons */
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Shadow effect for cards */
+.card.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for star ratings */
+.text-warning i.bi-star-fill {
+    color: #ffc107;
+}
+
+.text-warning i.bi-star {
+    color: #e4e5e9;
+}

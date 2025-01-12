@@ -1,75 +1,115 @@
-﻿
+﻿@model IEnumerable<ProductsApp.Models.Product>
+@using System.Linq
+
 @{
-    ViewData["Title"] = "Home";
-    // Suppose you have a dictionary:
-    // ViewBag.TabbedProducts = new Dictionary<string, List<Product>>
-    // keyed by CategoryName or something similar.
+    ViewBag.Title = "Afisare produse";
+    // Determine the number of products per slide
+    int productsPerSlide = 3;
+    // Group products into chunks
+    var groupedProducts = Model.Select((product, index) => new { product, index })
+                               .GroupBy(x => x.index / productsPerSlide)
+                               .ToList();
 }
 
-<!-- TAB NAVIGATION -->
-<ul class="nav nav-tabs" id="homeTab" role="tablist">
-    @foreach (var categoryName in ViewBag.TabbedProducts.Keys)
-    {
-        var firstCategory = ViewBag.TabbedProducts.Keys.First();
-        bool isActive = (categoryName == firstCategory);
+<br />
+<h2 class="text-center">Afisare produse</h2>
+<br />
 
-        <li class="nav-item" role="presentation">
-            <button class="nav-link @(isActive ? "active" : "")"
-                    id="@categoryName-Tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#@categoryName"
-                    type="button"
-                    role="tab"
-                    aria-controls="@categoryName"
-                    aria-selected="@isActive">
-                @categoryName
-            </button>
-        </li>
-    }
-</ul>
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-@ViewBag.Alert p-3 rounded-3 text-center mb-5">
+        @ViewBag.Message
+    </div>
+}
 
-<!-- TAB CONTENT -->
-<div class="tab-content" id="homeTabContent">
-    @foreach (var categoryName in ViewBag.TabbedProducts.Keys)
-    {
-        var firstCategory = ViewBag.TabbedProducts.Keys.First();
-        bool isActive = (categoryName == firstCategory);
+<!-- Product Carousel -->
+<div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        @for (int i = 0; i < groupedProducts.Count; i++)
+        {
+            var group = groupedProducts[i];
+            <div class="carousel-item @(i == 0 ? "active" : "")">
+                <div class="row">
+                    @foreach (var item in group)
+                    {
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <!-- Product Image -->
+                                <div class="card-img-top-container" style="width: 100%; height: 200px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                                    @if (!string.IsNullOrEmpty(item.product.ImageUrl))
+                                    {
+                                        <img src="@item.product.ImageUrl" class="card-img-top" alt="Imaginea produsului" style="width: auto; height: 100%; object-fit: cover;" />
+                                    }
+                                    else
+                                    {
+                                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imaginea produsului" />
+                                    }
+                                </div>
 
-        <div class="tab-pane fade @(isActive ? "show active" : "")"
-             id="@categoryName"
-             role="tabpanel"
-             aria-labelledby="@categoryName-Tab">
+                                <!-- Card Body -->
+                                <div class="card-body d-flex flex-column">
+                                    <!-- Product Title -->
+                                    <h5 class="card-title truncate" title="@item.product.Title">@item.product.Title</h5>
 
-            <div class="row mt-3">
-                @foreach (var product in ViewBag.TabbedProducts[categoryName])
-                {
-                    <div class="col-md-3">
-                        <div class="card mb-4">
-                            <div class="card-img-top-container" style="height: 200px; overflow: hidden;">
-                                @if (!string.IsNullOrEmpty(product.ImageUrl))
-                                {
-                                    <img src="@product.ImageUrl" class="card-img-top"
-                                         alt="Imaginea produsului"
-                                         style="height: 100%; width: auto; object-fit: cover;" />
-                                }
-                            </div>
-                            <div class="card-body text-center">
-                                <h5>@product.Title</h5>
-                                <p class="text-muted">Preț: @product.Price.ToString("0.00") Lei</p>
+                                    <!-- Ratings and Reviews -->
+                                    <div class="mb-2">
+                                        <span class="text-warning">
+                                            @for (int star = 1; star <= 5; star++)
+                                            {
+                                                <i class="bi @(star <= Math.Round(item.product.Rating ?? 0, MidpointRounding.AwayFromZero) ? "bi-star-fill" : "bi-star")"></i>
+                                            }
+                                        </span>
+                                    </div>
 
-                                <!-- Add to cart directly from home screen -->
-                                <form asp-controller="Products" asp-action="AddCart" method="post">
-                                    <input type="hidden" name="ProductId" value="@product.Id" />
-                                    <input type="number" name="Quantity" value="1" min="1" class="form-control mb-2" style="max-width: 80px; margin: 0 auto;" />
-                                    <button type="submit" class="btn btn-primary">
-                                        <i class="bi bi-basket"></i> Adaugă în coș
-                                    </button>
-                                </form>
+                                    <!-- Price -->
+                                    <h6 class="mt-auto"><strong>@item.product.Price.ToString("0.00") Lei</strong></h6>
+
+                                    <!-- Add to Cart Button -->
+                                    <a href="/Products/AddCart/@item.product.Id" class="btn btn-primary btn-sm mt-2">
+                                        <i class="bi bi-cart-plus"></i> Cumpără
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                }
+                    }
+                </div>
             </div>
-        </div>
-    }
+        }
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Următor</span>
+    </button>
+</div>
+
+<!-- Optional Pagination (Remove if not needed) -->
+<div class="mt-4">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { search = ViewBag.SearchString, sortOrder = ViewBag.CurrentSort, page = 1 })" aria-label="First">
+                    <span aria-hidden="true">&laquo;&laquo;</span>
+                </a>
+            </li>
+
+            @for (int i = 1; i <= ViewBag.lastPage; i++)
+            {
+                <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { search = ViewBag.SearchString, sortOrder = ViewBag.CurrentSort, page = i })">@i</a>
+                </li>
+            }
+
+            <li class="page-item @(ViewBag.CurrentPage == ViewBag.lastPage ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { search = ViewBag.SearchString, sortOrder = ViewBag.CurrentSort, page = ViewBag.lastPage })" aria-label="Last">
+                    <span aria-hidden="true">&raquo;&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
