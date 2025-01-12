@@ -12,8 +12,8 @@ using ProductsApp.Data;
 namespace ProductsApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250112093228_initialmgr")]
-    partial class initialmgr
+    [Migration("20250112220540_migratiedaw")]
+    partial class migratiedaw
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
