@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProductsApp.Migrations
 {
     /// <inheritdoc />
-    public partial class migratiedaw : Migration
+    public partial class mgr : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -314,13 +314,13 @@ namespace ProductsApp.Migrations
                     CollaboratorId = table.Column<string>(type: "varchar(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     DateCreated = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    ProposedTitle = table.Column<string>(type: "longtext", nullable: false)
+                    ProposedTitle = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    ProposedContent = table.Column<string>(type: "longtext", nullable: false)
+                    ProposedContent = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ProposedPrice = table.Column<decimal>(type: "decimal(65,30)", nullable: true),
                     ProposedStock = table.Column<int>(type: "int", nullable: true),
-                    ProposedImageUrl = table.Column<string>(type: "longtext", nullable: false)
+                    ProposedImageUrl = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ProposedCategoryId = table.Column<int>(type: "int", nullable: true),
                     ProductId = table.Column<int>(type: "int", nullable: true)

@@ -365,11 +365,9 @@ namespace ProductsApp.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ProposedContent")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("ProposedImageUrl")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<decimal?>("ProposedPrice")
@@ -379,7 +377,6 @@ namespace ProductsApp.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ProposedTitle")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("RequestType")

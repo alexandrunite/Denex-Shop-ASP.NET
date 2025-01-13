@@ -612,30 +612,40 @@ namespace ProductsApp.Controllers
             bool isAdmin = User.IsInRole("Admin");
             bool isColaborator = User.IsInRole("Colaborator");
 
-            if (!(isAdmin || (isColaborator && product.UserId == userId)))
+            if (isAdmin)
+            {
+                // Admin delete directly
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+
+                TempData["message"] = "Produsul a fost șters!";
+                TempData["Alert"] = "success";
+                return RedirectToAction(nameof(Index));
+            }
+            else if (isColaborator && product.UserId == userId)
+            {
+                var relatedRequests = _context.ProductRequests.Where(pr => pr.ProductId == id).ToList();
+                if (relatedRequests.Any())
+                {
+                    _context.ProductRequests.RemoveRange(relatedRequests);
+                }
+
+                // Șterge produsul
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+
+                TempData["message"] = "Produsul a fost șters.";
+                TempData["Alert"] = "success";
+                return RedirectToAction(nameof(Index));
+            }
+            else
             {
                 TempData["message"] = "Nu aveți dreptul să ștergeți acest produs";
                 TempData["Alert"] = "danger";
                 return RedirectToAction(nameof(Index));
             }
-
-            // Crearea unei cereri de ștergere
-            var request = new ProductRequest
-            {
-                RequestType = RequestType.Delete,
-                ProductId = product.Id,
-                Status = RequestStatus.Pending,
-                CollaboratorId = userId,
-                DateCreated = DateTime.Now
-            };
-
-            _context.ProductRequests.Add(request);
-            await _context.SaveChangesAsync();
-
-            TempData["message"] = "Cererea de ștergere a fost trimisă pentru aprobare!";
-            TempData["Alert"] = "success";
-            return RedirectToAction(nameof(Index));
         }
+
 
         #endregion
 

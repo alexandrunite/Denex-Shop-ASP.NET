@@ -31,27 +31,62 @@ else
                 <tr>
                     <td>@request.Id</td>
                     <td>@request.RequestType</td>
-                    <td>@request.Collaborator.UserName</td>
+                    <td>@request.Collaborator?.UserName ?? "N/A"</td>
+
                     <td>
                         @if (request.RequestType != RequestType.Add && request.Product != null)
                         {
-                            @request.Product.Title
+                            <strong>@request.Product.Title</strong>
+                            <br />
+                            <img src="@request.Product.ImageUrl" alt="Imagine Produs" style="max-width: 100px;" />
+                        }
+                        else if (request.RequestType == RequestType.Add)
+                        {
+                            @:"N/A"
                         }
                         else
                         {
                             @:"N/A"
                         }
                     </td>
+
                     <td>
-                        <strong>Titlu:</strong> @request.ProposedTitle <br />
-                        <strong>Descriere:</strong> @request.ProposedContent <br />
-                        <strong>Preț:</strong> @(request.ProposedPrice.HasValue ? request.ProposedPrice.Value.ToString("C") : "N/A") <br />
-                        <strong>Stoc:</strong> @(request.ProposedStock.HasValue ? request.ProposedStock.Value.ToString() : "N/A") <br />
-                        @if (!string.IsNullOrEmpty(request.ProposedImageUrl))
+                        @if (request.RequestType == RequestType.Add || request.RequestType == RequestType.Edit)
                         {
-                            <img src="@request.ProposedImageUrl" alt="Imagine Propusă" style="max-width: 100px;" />
+                            <strong>Titlu:</strong> @request.ProposedTitle <br />
+                            <strong>Descriere:</strong> @request.ProposedContent <br />
+                            <strong>Preț:</strong> @(request.ProposedPrice.HasValue ? request.ProposedPrice.Value.ToString("C") : "N/A") <br />
+                            <strong>Stoc:</strong> @(request.ProposedStock.HasValue ? request.ProposedStock.Value.ToString() : "N/A") <br />
+                            @if (!string.IsNullOrEmpty(request.ProposedImageUrl))
+                            {
+                                <img src="@request.ProposedImageUrl" alt="Imagine Propusă" style="max-width: 100px;" />
+                            }
+                            else
+                            {
+                                <span>N/A</span>
+                            }
+                        }
+                        else if (request.RequestType == RequestType.Delete && request.Product != null)
+                        {
+                            <strong>Titlu:</strong> @request.Product.Title <br />
+                            <strong>Descriere:</strong> @request.Product.Content <br />
+                            <strong>Preț:</strong> @(request.Product.Price.ToString("C")) <br />
+                            <strong>Stoc:</strong> @(request.Product.Stock.ToString()) <br />
+                            @if (!string.IsNullOrEmpty(request.Product.ImageUrl))
+                            {
+                                <img src="@request.Product.ImageUrl" alt="Imagine Produs" style="max-width: 100px;" />
+                            }
+                            else
+                            {
+                                <span>N/A</span>
+                            }
+                        }
+                        else
+                        {
+                            @:"N/A"
                         }
                     </td>
+
                     <td>@request.DateCreated.ToString("dd/MM/yyyy HH:mm")</td>
                     <td>
                         <form asp-action="Approve" method="post" style="display:inline;">

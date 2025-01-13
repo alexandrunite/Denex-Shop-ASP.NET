@@ -29,7 +29,8 @@ namespace ProductsApp.Controllers
             var pendingRequests = _context.ProductRequests
                 .Include(pr => pr.Collaborator)
                 .Include(pr => pr.ProposedCategory)
-                .Where(pr => pr.Status == RequestStatus.Pending)
+                .Include(pr => pr.Product) // Include Product
+                .Where(pr => pr.Status == RequestStatus.Pending) // Filtrare pentru cereri pendinte
                 .ToList();
 
             _logger.LogInformation("Număr cereri de aprobare: {Count}", pendingRequests.Count);
@@ -46,6 +47,7 @@ namespace ProductsApp.Controllers
 
             var request = _context.ProductRequests
                 .Include(pr => pr.Collaborator)
+                .Include(pr => pr.Product) // Include Product
                 .FirstOrDefault(pr => pr.Id == id && pr.Status == RequestStatus.Pending);
 
             if (request == null)
@@ -56,8 +58,8 @@ namespace ProductsApp.Controllers
                 return RedirectToAction(nameof(PendingApproval));
             }
 
-            // Verifică dacă categoria propusă este setată
-            if (!request.ProposedCategoryId.HasValue)
+            // Verifică dacă categoria propusă este setată doar pentru cereri de tip Add/Edit
+            if (request.RequestType != RequestType.Delete && !request.ProposedCategoryId.HasValue)
             {
                 _logger.LogWarning("Categoria propusă nu este setată pentru cererea ID: {RequestId}", id);
                 TempData["message"] = "Categoria propusă nu este setată.";
@@ -107,6 +109,23 @@ namespace ProductsApp.Controllers
                 _context.Products.Update(existingProduct);
                 _logger.LogInformation("Cererea de editare a fost aprobată și produsul a fost actualizat.");
             }
+            else if (request.RequestType == RequestType.Delete)
+            {
+                // Procesare cerere de ștergere
+                var product = _context.Products.Find(request.ProductId);
+                if (product != null)
+                {
+                    _context.Products.Remove(product);
+                    _logger.LogInformation("Cererea de ștergere a fost aprobată și produsul a fost șters.");
+                }
+                else
+                {
+                    _logger.LogWarning("Produsul cu ID {ProductId} nu a fost găsit pentru cererea de ștergere.", request.ProductId);
+                    TempData["message"] = "Produsul nu a fost găsit.";
+                    TempData["Alert"] = "danger";
+                    return RedirectToAction(nameof(PendingApproval));
+                }
+            }
 
             // Actualizează starea cererii la Aprobat
             request.Status = RequestStatus.Approved;
@@ -120,7 +139,6 @@ namespace ProductsApp.Controllers
             TempData["Alert"] = "success";
             return RedirectToAction(nameof(PendingApproval));
         }
-
 
         // POST: Admin/Reject/5
         [HttpPost]
