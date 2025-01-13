@@ -8592,11 +8592,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\ProductsApp.csproj",
+      "projectUniqueName": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\ProductsApp.csproj",
       "projectName": "ProductsApp",
-      "projectPath": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\ProductsApp.csproj",
+      "projectPath": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\ProductsApp.csproj",
       "packagesPath": "C:\\Users\\alexn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\obj\\",
+      "outputPath": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexn\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -128,6 +128,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\2bff3c4e-e5a7-4afa-b653-5c6f068a19f9_Screenshot_2024-12-17_115556.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\2c3df97d-11aa-48a9-a303-e10bdc405c42_Screenshot_2024-11-09_234820.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProductsApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProductsApp</BasePath>
+      <RelativePath>images/2c3df97d-11aa-48a9-a303-e10bdc405c42_Screenshot_2024-11-09_234820.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\2c3df97d-11aa-48a9-a303-e10bdc405c42_Screenshot_2024-11-09_234820.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\386c24c4-2360-4b80-8b2b-a14482c1434c_Screenshot_2024-10-31_011404.png))">
       <SourceType>Package</SourceType>
       <SourceId>ProductsApp</SourceId>
@@ -256,6 +272,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\75d5c226-dac6-4799-b367-6c04f98c957c_Screenshot_2024-10-31_011256.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7ecd6886-8b53-478f-8918-41747217d952_Screenshot_2024-10-31_011256.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProductsApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProductsApp</BasePath>
+      <RelativePath>images/7ecd6886-8b53-478f-8918-41747217d952_Screenshot_2024-10-31_011256.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7ecd6886-8b53-478f-8918-41747217d952_Screenshot_2024-10-31_011256.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\8792716d-2316-4228-8ab7-e6b5bf01da42_Screenshot_2024-12-17_115556.png))">
       <SourceType>Package</SourceType>
       <SourceId>ProductsApp</SourceId>
@@ -319,6 +351,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\8a474e7c-4d29-47e9-be89-5912621cdaac_Screenshot_2024-11-15_124057.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\8dda31c7-6e47-427c-b9d9-e8b032fa8879_Screenshot_2024-11-15_123837.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProductsApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProductsApp</BasePath>
+      <RelativePath>images/8dda31c7-6e47-427c-b9d9-e8b032fa8879_Screenshot_2024-11-15_123837.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\8dda31c7-6e47-427c-b9d9-e8b032fa8879_Screenshot_2024-11-15_123837.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\9309cf12-3edc-4b42-9cee-487eeb9c3e5e_Screenshot_2024-12-17_115556.png))">
       <SourceType>Package</SourceType>

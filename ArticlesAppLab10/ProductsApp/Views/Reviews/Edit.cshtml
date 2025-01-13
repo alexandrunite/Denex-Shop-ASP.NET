@@ -1,9 +1,7 @@
 ﻿@model ProductsApp.Models.Review
 
-
 <h2>Editare comentariu</h2>
 <br />
-
 
 <form asp-action="Edit" asp-controller="Reviews" asp-route-id="@Model.Id" method="post">
 
@@ -14,10 +12,16 @@
         <span asp-validation-for="Content" class="text-danger"></span>
     </div>
 
+    <div class="form-group">
+        <label>Rating (1-5)</label>
+        <input type="number" name="Rating" min="1" max="5" class="form-control" style="width: 80px;" />
+        <span asp-validation-for="Rating" class="text-danger"></span>
+        <br /><br />
+        <span asp-validation-for="Rating" class="text-danger"></span>
+    </div>
+
     <br /><br />
 
     <button class="btn btn-primary" type="submit">Editează comentariul</button>
 
 </form>
-
-

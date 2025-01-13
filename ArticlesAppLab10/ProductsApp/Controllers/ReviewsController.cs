@@ -105,7 +105,20 @@ namespace ProductsApp.Controllers
                 if (ModelState.IsValid)
                 {
                     comm.Content = requestReview.Content;
-                    comm.Rating = requestReview.Rating;
+
+                    // Asigură-te că Rating-ul este inclus și valid
+                    if (requestReview.Rating.HasValue)
+                    {
+                        comm.Rating = requestReview.Rating.Value;
+                    }
+                    else
+                    {
+                        // Dacă Rating-ul nu este setat, poți decide cum să gestionezi
+                        // Poate setarea unei valori implicite sau afișarea unei erori
+                        ModelState.AddModelError("Rating", "Ratingul este obligatoriu.");
+                        return View(requestReview);
+                    }
+
                     comm.Date = DateTime.Now;
 
                     db.SaveChanges();
@@ -133,5 +146,6 @@ namespace ProductsApp.Controllers
                 return RedirectToAction("Index", "Products");
             }
         }
+
     }
 }

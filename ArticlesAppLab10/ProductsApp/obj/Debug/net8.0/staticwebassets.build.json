@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0xhq/HtizA5IO/v6AAuD4DHJJ8JLWbnyPVHe0I585pM=",
+  "Hash": "WBldo7myXh6PSmz62WSiiPrZOR6MBeI0KNE1rJ4CO5E=",
   "Source": "ProductsApp",
   "BasePath": "_content/ProductsApp",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "ProductsApp\\wwwroot",
       "Source": "ProductsApp",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "Pattern": "**"
     }
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "C:\\Users\\alexn\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.11\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ProductsApp.styles.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ProductsApp.styles.css",
       "SourceId": "ProductsApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "ProductsApp.styles.css",
       "AssetKind": "All",
@@ -1173,13 +1173,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ProductsApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ProductsApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProductsApp.bundle.scp.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProductsApp.bundle.scp.css",
       "SourceId": "ProductsApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "ProductsApp.bundle.scp.css",
       "AssetKind": "All",
@@ -1192,13 +1192,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProductsApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProductsApp.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\css\\site.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\favicon.ico",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\0f652680-0dc5-479b-9323-a29dedbb38cc_Screenshot_2024-11-10_134614.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\0f652680-0dc5-479b-9323-a29dedbb38cc_Screenshot_2024-11-10_134614.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/0f652680-0dc5-479b-9323-a29dedbb38cc_Screenshot_2024-11-10_134614.png",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0f652680-0dc5-479b-9323-a29dedbb38cc_Screenshot_2024-11-10_134614.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\14db3faf-22cb-482a-8073-f752dcca401c_Screenshot_2025-01-08_173655.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\14db3faf-22cb-482a-8073-f752dcca401c_Screenshot_2025-01-08_173655.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/14db3faf-22cb-482a-8073-f752dcca401c_Screenshot_2025-01-08_173655.png",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\images\\14db3faf-22cb-482a-8073-f752dcca401c_Screenshot_2025-01-08_173655.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\17560242-b13f-48eb-b248-ea9190feb577_Screenshot 2024-10-31 212206.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\17560242-b13f-48eb-b248-ea9190feb577_Screenshot 2024-10-31 212206.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/17560242-b13f-48eb-b248-ea9190feb577_Screenshot 2024-10-31 212206.png",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\17560242-b13f-48eb-b248-ea9190feb577_Screenshot 2024-10-31 212206.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\1d27f6af-d97d-40eb-82a3-e88064b2bf7b_Screenshot_2024-12-17_115556.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\1d27f6af-d97d-40eb-82a3-e88064b2bf7b_Screenshot_2024-12-17_115556.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/1d27f6af-d97d-40eb-82a3-e88064b2bf7b_Screenshot_2024-12-17_115556.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1d27f6af-d97d-40eb-82a3-e88064b2bf7b_Screenshot_2024-12-17_115556.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\2bcfd493-0524-4bf9-b859-af82125f75bb_Screenshot_2024-11-02_213239.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\2bcfd493-0524-4bf9-b859-af82125f75bb_Screenshot_2024-11-02_213239.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/2bcfd493-0524-4bf9-b859-af82125f75bb_Screenshot_2024-11-02_213239.png",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2bcfd493-0524-4bf9-b859-af82125f75bb_Screenshot_2024-11-02_213239.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\2bff3c4e-e5a7-4afa-b653-5c6f068a19f9_Screenshot_2024-12-17_115556.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\2bff3c4e-e5a7-4afa-b653-5c6f068a19f9_Screenshot_2024-12-17_115556.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/2bff3c4e-e5a7-4afa-b653-5c6f068a19f9_Screenshot_2024-12-17_115556.png",
       "AssetKind": "All",
@@ -1347,10 +1347,29 @@
       "OriginalItemSpec": "wwwroot\\images\\2bff3c4e-e5a7-4afa-b653-5c6f068a19f9_Screenshot_2024-12-17_115556.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\386c24c4-2360-4b80-8b2b-a14482c1434c_Screenshot_2024-10-31_011404.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\2c3df97d-11aa-48a9-a303-e10bdc405c42_Screenshot_2024-11-09_234820.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
+      "BasePath": "_content/ProductsApp",
+      "RelativePath": "images/2c3df97d-11aa-48a9-a303-e10bdc405c42_Screenshot_2024-11-09_234820.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2c3df97d-11aa-48a9-a303-e10bdc405c42_Screenshot_2024-11-09_234820.png"
+    },
+    {
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\386c24c4-2360-4b80-8b2b-a14482c1434c_Screenshot_2024-10-31_011404.png",
+      "SourceId": "ProductsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/386c24c4-2360-4b80-8b2b-a14482c1434c_Screenshot_2024-10-31_011404.png",
       "AssetKind": "All",
@@ -1366,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\images\\386c24c4-2360-4b80-8b2b-a14482c1434c_Screenshot_2024-10-31_011404.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\3c04a0b5-7f2a-4931-8f22-a7e6e76c52b1_Screenshot_2024-10-31_215859.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\3c04a0b5-7f2a-4931-8f22-a7e6e76c52b1_Screenshot_2024-10-31_215859.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/3c04a0b5-7f2a-4931-8f22-a7e6e76c52b1_Screenshot_2024-10-31_215859.png",
       "AssetKind": "All",
@@ -1385,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3c04a0b5-7f2a-4931-8f22-a7e6e76c52b1_Screenshot_2024-10-31_215859.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\3cf28a68-880a-42be-8964-0df981cb998b_Screenshot_2024-12-17_115556.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\3cf28a68-880a-42be-8964-0df981cb998b_Screenshot_2024-12-17_115556.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/3cf28a68-880a-42be-8964-0df981cb998b_Screenshot_2024-12-17_115556.png",
       "AssetKind": "All",
@@ -1404,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3cf28a68-880a-42be-8964-0df981cb998b_Screenshot_2024-12-17_115556.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\4a7c4bce-54c9-4d66-86ea-4093c8b88c02_Screenshot_2025-01-08_173655.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\4a7c4bce-54c9-4d66-86ea-4093c8b88c02_Screenshot_2025-01-08_173655.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/4a7c4bce-54c9-4d66-86ea-4093c8b88c02_Screenshot_2025-01-08_173655.png",
       "AssetKind": "All",
@@ -1423,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\4a7c4bce-54c9-4d66-86ea-4093c8b88c02_Screenshot_2025-01-08_173655.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\5a9931f3-375b-40a8-965b-ecba5e8a2122_Screenshot_2024-10-31_211200.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\5a9931f3-375b-40a8-965b-ecba5e8a2122_Screenshot_2024-10-31_211200.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/5a9931f3-375b-40a8-965b-ecba5e8a2122_Screenshot_2024-10-31_211200.png",
       "AssetKind": "All",
@@ -1442,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5a9931f3-375b-40a8-965b-ecba5e8a2122_Screenshot_2024-10-31_211200.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\61a849bf-ee7c-4ed6-bdac-f83b5b99b7b2_Screenshot 2024-11-15 124039.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\61a849bf-ee7c-4ed6-bdac-f83b5b99b7b2_Screenshot 2024-11-15 124039.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/61a849bf-ee7c-4ed6-bdac-f83b5b99b7b2_Screenshot 2024-11-15 124039.png",
       "AssetKind": "All",
@@ -1461,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\images\\61a849bf-ee7c-4ed6-bdac-f83b5b99b7b2_Screenshot 2024-11-15 124039.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\70b460b6-61fa-413a-909e-76b1b99c464c_download.jpeg",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\70b460b6-61fa-413a-909e-76b1b99c464c_download.jpeg",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/70b460b6-61fa-413a-909e-76b1b99c464c_download.jpeg",
       "AssetKind": "All",
@@ -1480,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\images\\70b460b6-61fa-413a-909e-76b1b99c464c_download.jpeg"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\75d5c226-dac6-4799-b367-6c04f98c957c_Screenshot_2024-10-31_011256.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\75d5c226-dac6-4799-b367-6c04f98c957c_Screenshot_2024-10-31_011256.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/75d5c226-dac6-4799-b367-6c04f98c957c_Screenshot_2024-10-31_011256.png",
       "AssetKind": "All",
@@ -1499,10 +1518,29 @@
       "OriginalItemSpec": "wwwroot\\images\\75d5c226-dac6-4799-b367-6c04f98c957c_Screenshot_2024-10-31_011256.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\8792716d-2316-4228-8ab7-e6b5bf01da42_Screenshot_2024-12-17_115556.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\7ecd6886-8b53-478f-8918-41747217d952_Screenshot_2024-10-31_011256.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
+      "BasePath": "_content/ProductsApp",
+      "RelativePath": "images/7ecd6886-8b53-478f-8918-41747217d952_Screenshot_2024-10-31_011256.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7ecd6886-8b53-478f-8918-41747217d952_Screenshot_2024-10-31_011256.png"
+    },
+    {
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\8792716d-2316-4228-8ab7-e6b5bf01da42_Screenshot_2024-12-17_115556.png",
+      "SourceId": "ProductsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/8792716d-2316-4228-8ab7-e6b5bf01da42_Screenshot_2024-12-17_115556.png",
       "AssetKind": "All",
@@ -1518,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8792716d-2316-4228-8ab7-e6b5bf01da42_Screenshot_2024-12-17_115556.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\89c05c47-cce6-4f9b-aa4f-578d0e25405e_Screenshot_2024-12-17_115556.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\89c05c47-cce6-4f9b-aa4f-578d0e25405e_Screenshot_2024-12-17_115556.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/89c05c47-cce6-4f9b-aa4f-578d0e25405e_Screenshot_2024-12-17_115556.png",
       "AssetKind": "All",
@@ -1537,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\images\\89c05c47-cce6-4f9b-aa4f-578d0e25405e_Screenshot_2024-12-17_115556.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\89f39ac2-926f-4390-abc7-9bb3d2dc3116_Screenshot_2024-10-31_211200.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\89f39ac2-926f-4390-abc7-9bb3d2dc3116_Screenshot_2024-10-31_211200.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/89f39ac2-926f-4390-abc7-9bb3d2dc3116_Screenshot_2024-10-31_211200.png",
       "AssetKind": "All",
@@ -1556,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\images\\89f39ac2-926f-4390-abc7-9bb3d2dc3116_Screenshot_2024-10-31_211200.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\8a474e7c-4d29-47e9-be89-5912621cdaac_Screenshot_2024-11-15_124057.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\8a474e7c-4d29-47e9-be89-5912621cdaac_Screenshot_2024-11-15_124057.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/8a474e7c-4d29-47e9-be89-5912621cdaac_Screenshot_2024-11-15_124057.png",
       "AssetKind": "All",
@@ -1575,10 +1613,29 @@
       "OriginalItemSpec": "wwwroot\\images\\8a474e7c-4d29-47e9-be89-5912621cdaac_Screenshot_2024-11-15_124057.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\9309cf12-3edc-4b42-9cee-487eeb9c3e5e_Screenshot_2024-12-17_115556.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\8dda31c7-6e47-427c-b9d9-e8b032fa8879_Screenshot_2024-11-15_123837.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
+      "BasePath": "_content/ProductsApp",
+      "RelativePath": "images/8dda31c7-6e47-427c-b9d9-e8b032fa8879_Screenshot_2024-11-15_123837.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8dda31c7-6e47-427c-b9d9-e8b032fa8879_Screenshot_2024-11-15_123837.png"
+    },
+    {
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\9309cf12-3edc-4b42-9cee-487eeb9c3e5e_Screenshot_2024-12-17_115556.png",
+      "SourceId": "ProductsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/9309cf12-3edc-4b42-9cee-487eeb9c3e5e_Screenshot_2024-12-17_115556.png",
       "AssetKind": "All",
@@ -1594,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9309cf12-3edc-4b42-9cee-487eeb9c3e5e_Screenshot_2024-12-17_115556.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\983497a3-f0fd-4e64-8152-665b5da341c5_Screenshot 2024-11-15 123837.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\983497a3-f0fd-4e64-8152-665b5da341c5_Screenshot 2024-11-15 123837.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/983497a3-f0fd-4e64-8152-665b5da341c5_Screenshot 2024-11-15 123837.png",
       "AssetKind": "All",
@@ -1613,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\images\\983497a3-f0fd-4e64-8152-665b5da341c5_Screenshot 2024-11-15 123837.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\b52744c5-9a04-435a-95a7-601cd6ab2a0c_Screenshot_2024-12-17_115556.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\b52744c5-9a04-435a-95a7-601cd6ab2a0c_Screenshot_2024-12-17_115556.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/b52744c5-9a04-435a-95a7-601cd6ab2a0c_Screenshot_2024-12-17_115556.png",
       "AssetKind": "All",
@@ -1632,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b52744c5-9a04-435a-95a7-601cd6ab2a0c_Screenshot_2024-12-17_115556.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\b56aeaf2-2a87-440b-a1ad-748b337408cc_Screenshot_2024-11-09_234820.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\b56aeaf2-2a87-440b-a1ad-748b337408cc_Screenshot_2024-11-09_234820.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/b56aeaf2-2a87-440b-a1ad-748b337408cc_Screenshot_2024-11-09_234820.png",
       "AssetKind": "All",
@@ -1651,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b56aeaf2-2a87-440b-a1ad-748b337408cc_Screenshot_2024-11-09_234820.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\ba3bec80-ebe6-46fb-9e2f-16966c20361e_Screenshot_2024-10-31_011404.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\ba3bec80-ebe6-46fb-9e2f-16966c20361e_Screenshot_2024-10-31_011404.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/ba3bec80-ebe6-46fb-9e2f-16966c20361e_Screenshot_2024-10-31_011404.png",
       "AssetKind": "All",
@@ -1670,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ba3bec80-ebe6-46fb-9e2f-16966c20361e_Screenshot_2024-10-31_011404.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\ba6175ea-229c-4649-9c34-028783bd5beb_Screenshot_2024-10-31_011404.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\ba6175ea-229c-4649-9c34-028783bd5beb_Screenshot_2024-10-31_011404.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/ba6175ea-229c-4649-9c34-028783bd5beb_Screenshot_2024-10-31_011404.png",
       "AssetKind": "All",
@@ -1689,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ba6175ea-229c-4649-9c34-028783bd5beb_Screenshot_2024-10-31_011404.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\images\\f8bb7b5f-d316-4314-97e5-b44e102b7bd3_Screenshot_2024-10-31_212206.png",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\images\\f8bb7b5f-d316-4314-97e5-b44e102b7bd3_Screenshot_2024-10-31_212206.png",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "images/f8bb7b5f-d316-4314-97e5-b44e102b7bd3_Screenshot_2024-10-31_212206.png",
       "AssetKind": "All",
@@ -1708,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f8bb7b5f-d316-4314-97e5-b44e102b7bd3_Screenshot_2024-10-31_212206.png"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\js\\site.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1727,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\js\\Summernote.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\js\\Summernote.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "js/Summernote.js",
       "AssetKind": "All",
@@ -1746,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Summernote.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1765,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1784,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1803,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1822,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1841,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1860,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1879,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1898,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1917,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1936,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1955,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1974,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1993,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2012,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2031,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2050,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2069,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2088,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2107,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2126,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2145,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2164,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2183,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2202,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2221,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2240,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2259,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2297,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2316,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2335,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2354,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2373,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2392,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2411,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2430,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2449,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2468,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2487,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2506,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2525,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2544,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2563,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2582,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2601,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2620,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2639,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2658,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2677,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2696,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2715,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2734,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2753,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2772,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2791,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2810,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "ProductsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex Shop\\ProductsApp\\wwwroot\\",
       "BasePath": "_content/ProductsApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
