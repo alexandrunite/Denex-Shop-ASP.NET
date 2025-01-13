@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uQ2ohjnoB8k=",
+  "dgSpecHash": "7VdAgaHTgZc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\ArticlesAppLab10\\ProductsApp\\ProductsApp.csproj",
+  "projectFilePath": "C:\\Users\\alexn\\Documents\\GitHub\\DAW-Project-Mihaila-Nite\\Denex\\ProductsApp\\ProductsApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexn\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\alexn\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",
