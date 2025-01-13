@@ -21,7 +21,7 @@
         <div class="card-text">@Html.Raw(Model.Content)</div>
 
         <!-- Prețul produsului -->
-        <p class="text-center mt-2"><strong>Preț:</strong> @Model.Price.ToString("0.00") RON</p>
+        <p class="text-center mt-2"><strong>Preț:</strong> @Model.Price.ToString("C2")</p>
 
         <!-- Informații suplimentare despre produs -->
         <div class="d-flex justify-content-between flex-row mt-5">

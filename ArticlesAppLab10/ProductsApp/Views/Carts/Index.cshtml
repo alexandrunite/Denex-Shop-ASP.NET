@@ -48,15 +48,15 @@
                                     <tr>
                                         <td>@productCart.Product.Title</td>
                                         <td>@productCart.Quantity</td>
-                                        <td>@productCart.Product.Price.ToString("C")</td>
-                                        <td>@(productCart.Quantity * productCart.Product.Price).ToString("C")</td>
+                                        <td>@productCart.Product.Price.ToString("C2")</td>
+                                        <td>@((productCart.Quantity * productCart.Product.Price).ToString("C2"))</td>
                                     </tr>
                                 }
                             </tbody>
                         </table>
 
                         <div class="text-end">
-                            <strong>Total:</strong> @cart.ProductCarts.Sum(pc => pc.Quantity * pc.Product.Price).ToString("C")
+                            <strong>Total:</strong> @cart.ProductCarts.Sum(pc => pc.Quantity * pc.Product.Price).ToString("C2")
                         </div>
 
                         @if (!User.IsInRole("Admin"))

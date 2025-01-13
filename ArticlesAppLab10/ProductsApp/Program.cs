@@ -2,6 +2,8 @@ using ProductsApp.Data;
 using ProductsApp.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,6 +46,20 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+var cultureInfo = new CultureInfo("ro-RO");
+
+CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture(cultureInfo),
+    SupportedCultures = new List<CultureInfo> { cultureInfo },
+    SupportedUICultures = new List<CultureInfo> { cultureInfo }
+};
+
+app.UseRequestLocalization(localizationOptions);
 
 app.UseRouting();
 
