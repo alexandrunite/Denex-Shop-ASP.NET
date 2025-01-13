@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using static ProductsApp.Models.ProductCarts;
 
-// PASUL 4: useri si roluri
 
 namespace ProductsApp.Models
 {
@@ -15,23 +14,19 @@ namespace ProductsApp.Models
             serviceProvider.GetRequiredService
             <DbContextOptions<ApplicationDbContext>>()))
             {
-                // Verificam daca in baza de date exista cel putin un rol
                 if (context.Roles.Any())
                 {
-                    return; // Baza de date contine deja roluri
+                    return;
                 }
 
-                // Crearea rolurilor in BD
                 context.Roles.AddRange(
                 new IdentityRole { Id = "2c5e174e-3b0e-446f-86af-483d56fd7210", Name = "Admin", NormalizedName = "ADMIN" },
                 new IdentityRole { Id = "2c5e174e-3b0e-446f-86af-483d56fd7211", Name = "Colaborator", NormalizedName = "COLABORATOR" },
                 new IdentityRole { Id = "2c5e174e-3b0e-446f-86af-483d56fd7212", Name = "User", NormalizedName = "USER" }
                 );
 
-                // Instanta pentru crearea parolelor utilizatorilor
                 var hasher = new PasswordHasher<ApplicationUser>();
 
-                // Crearea utilizatorilor in BD
                 context.Users.AddRange(
                 new ApplicationUser
                 {
@@ -67,7 +62,6 @@ namespace ProductsApp.Models
                 }
                 );
 
-                // Asocierea user-urilor la roluri
                 context.UserRoles.AddRange(
                 new IdentityUserRole<string>
                 {

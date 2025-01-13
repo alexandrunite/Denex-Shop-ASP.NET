@@ -1,5 +1,4 @@
-﻿// Controllers/UsersController.cs
-using ProductsApp.Data;
+﻿using ProductsApp.Data;
 using ProductsApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -76,9 +75,8 @@ namespace ProductsApp.Controllers
 
             ViewBag.AllRoles = GetAllRoles();
 
-            var roleNames = await _userManager.GetRolesAsync(user); // Lista de nume de roluri
+            var roleNames = await _userManager.GetRolesAsync(user);
 
-            // Cautăm ID-ul rolului în baza de date
             var userRole = await _roleManager.Roles
                                               .Where(r => roleNames.Contains(r.Name))
                                               .Select(r => r.Id)
@@ -112,14 +110,12 @@ namespace ProductsApp.Controllers
                 user.LastName = newData.LastName;
                 user.PhoneNumber = newData.PhoneNumber;
 
-                // Remove all existing roles
                 var currentRoles = await _userManager.GetRolesAsync(user);
                 foreach (var role in currentRoles)
                 {
                     await _userManager.RemoveFromRoleAsync(user, role);
                 }
 
-                // Assign new role
                 if (!string.IsNullOrEmpty(newRole))
                 {
                     var role = await _roleManager.FindByIdAsync(newRole);
@@ -146,7 +142,7 @@ namespace ProductsApp.Controllers
 
             var user = db.Users
                          .Include(u => u.Reviews)
-                         .Include(u => u.Cart) // Înlocuim Carts cu Cart
+                         .Include(u => u.Cart)
                          .Include(u => u.Products)
                          .FirstOrDefault(u => u.Id == id);
 
@@ -155,19 +151,16 @@ namespace ProductsApp.Controllers
                 return NotFound();
             }
 
-            // Șterge review-urile utilizatorului
             if (user.Reviews != null && user.Reviews.Any())
             {
                 db.Reviews.RemoveRange(user.Reviews);
             }
 
-            // Șterge coșul utilizatorului
             if (user.Cart != null)
             {
                 db.Carts.Remove(user.Cart);
             }
 
-            // Șterge produsele utilizatorului
             if (user.Products != null && user.Products.Any())
             {
                 db.Products.RemoveRange(user.Products);

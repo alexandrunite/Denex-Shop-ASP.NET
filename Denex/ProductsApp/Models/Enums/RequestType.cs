@@ -1,5 +1,4 @@
-﻿// Models/Enums/RequestType.cs
-namespace ProductsApp.Models.Enums
+﻿namespace ProductsApp.Models.Enums
 {
     public enum RequestType
     {

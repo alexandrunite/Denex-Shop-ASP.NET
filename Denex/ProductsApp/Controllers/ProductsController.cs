@@ -1,5 +1,4 @@
-﻿// Controllers/ProductsController.cs
-using ProductsApp.Data;
+﻿using ProductsApp.Data;
 using ProductsApp.Models;
 using ProductsApp.Models.ViewModels;
 using ProductsApp.Models.Enums;
@@ -18,8 +17,6 @@ using static ProductsApp.Models.ProductCarts;
 
 namespace ProductsApp.Controllers
 {
-    // Eliminăm atributul [Authorize] de la nivel de clasă
-    // [Authorize(Roles = "User,Colaborator,Admin")]
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -39,13 +36,11 @@ namespace ProductsApp.Controllers
 
         #region Index
 
-        // GET: Products
         [AllowAnonymous]
         public IActionResult Index(string search, string sortOrder, int page = 1)
         {
             _logger.LogInformation("Accesare Index.cshtml cu parametrii: search={Search}, sortOrder={SortOrder}, page={Page}", search, sortOrder, page);
 
-            // Configurări de sortare
             ViewBag.CurrentSort = sortOrder;
             ViewBag.PriceSortParam = sortOrder == "price_asc" ? "price_desc" : "price_asc";
             ViewBag.RatingSortParam = sortOrder == "rating_asc" ? "rating_desc" : "rating_asc";
@@ -55,14 +50,12 @@ namespace ProductsApp.Controllers
                 .Include(p => p.Reviews)
                 .AsQueryable();
 
-            // Căutare
             if (!string.IsNullOrEmpty(search))
             {
                 search = search.Trim();
                 products = products.Where(p => p.Title.Contains(search) || p.Content.Contains(search));
             }
 
-            // Sortare
             switch (sortOrder)
             {
                 case "price_asc":
@@ -78,11 +71,10 @@ namespace ProductsApp.Controllers
                     products = products.OrderByDescending(p => p.Rating);
                     break;
                 default:
-                    products = products.OrderBy(p => p.Title); // Sortare implicită
+                    products = products.OrderBy(p => p.Title);
                     break;
             }
 
-            // Paginare
             int pageSize = 3;
             int totalItems = products.Count();
             int totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
@@ -98,7 +90,6 @@ namespace ProductsApp.Controllers
 
         #region Show
 
-        // GET: Products/Show/5
         [AllowAnonymous]
         public IActionResult Show(int id)
         {
@@ -120,7 +111,6 @@ namespace ProductsApp.Controllers
                 return RedirectToAction("Index");
             }
 
-            // Condiție pentru a permite vizualizarea produsului de către utilizatorii neînregistrați
             if (!product.IsApproved && !(isAdmin || (isColaborator && product.UserId == userId)))
             {
                 TempData["message"] = "Produsul nu este aprobat și nu poate fi vizualizat";
@@ -128,7 +118,6 @@ namespace ProductsApp.Controllers
                 return RedirectToAction("Index");
             }
 
-            // Obține coșul utilizatorului dacă este autentificat
             var cart = User.Identity.IsAuthenticated ? _context.Carts
                 .Include(c => c.ProductCarts)
                     .ThenInclude(pc => pc.Product)
@@ -141,7 +130,6 @@ namespace ProductsApp.Controllers
 
             ViewBag.Cart = cart;
 
-            // Accesul la butoane
             ViewBag.AfisareButoane = isAdmin || (isColaborator && product.UserId == userId);
             ViewBag.EsteAdmin = isAdmin;
             ViewBag.UserCurent = userId;
@@ -155,7 +143,6 @@ namespace ProductsApp.Controllers
             return View(product);
         }
 
-        // POST: Products/Show (Adăugare Review)
         [Authorize(Roles = "User,Colaborator,Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -170,7 +157,6 @@ namespace ProductsApp.Controllers
                 _context.Reviews.Add(review);
                 _context.SaveChanges();
 
-                // Recalculare rating
                 var product = _context.Products.Include(p => p.Reviews).FirstOrDefault(p => p.Id == review.ProductId);
                 if (product != null)
                 {
@@ -181,7 +167,6 @@ namespace ProductsApp.Controllers
                 return RedirectToAction("Show", new { id = review.ProductId });
             }
 
-            // Dacă ModelState nu este valid, reafișăm produsul
             var productModel = _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.User)
@@ -191,7 +176,6 @@ namespace ProductsApp.Controllers
 
             if (productModel != null)
             {
-                // Obține coșul utilizatorului
                 var cart = _context.Carts
                     .Include(c => c.ProductCarts)
                         .ThenInclude(pc => pc.Product)
@@ -204,7 +188,6 @@ namespace ProductsApp.Controllers
 
                 ViewBag.Cart = cart;
 
-                // Accesul la butoane
                 bool isAdmin = User.IsInRole("Admin");
                 bool isColaborator = User.IsInRole("Colaborator");
                 ViewBag.AfisareButoane = isAdmin || (isColaborator && productModel.UserId == userId);
@@ -225,7 +208,6 @@ namespace ProductsApp.Controllers
 
         #region New
 
-        // GET: Products/New
         [Authorize(Roles = "Colaborator,Admin")]
         public IActionResult New()
         {
@@ -240,13 +222,11 @@ namespace ProductsApp.Controllers
             return View(viewModel);
         }
 
-        // POST: Products/New
         [Authorize(Roles = "Colaborator,Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> New(ProductCreateViewModel viewModel)
         {
-            // Eliminăm validarea pentru 'Categories' deoarece nu este nevoie
             ModelState.Remove("Categories");
 
             if (ModelState.IsValid)
@@ -256,7 +236,6 @@ namespace ProductsApp.Controllers
 
                 if (User.IsInRole("Admin"))
                 {
-                    // Administratorul adaugă produs direct și aprobat
                     var product = new Product
                     {
                         Title = viewModel.Title,
@@ -264,13 +243,12 @@ namespace ProductsApp.Controllers
                         Price = viewModel.Price,
                         Stock = viewModel.Stock,
                         CategoryId = viewModel.CategoryId,
-                        ImageUrl = null, // Va fi setat după procesarea imaginii
+                        ImageUrl = null,
                         UserId = userId,
                         Date = DateTime.Now,
                         IsApproved = true
                     };
 
-                    // Procesare imagine
                     if (viewModel.ImageFile != null && viewModel.ImageFile.Length > 0)
                     {
                         var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
@@ -288,8 +266,8 @@ namespace ProductsApp.Controllers
                         }
 
                         var fileName = Path.GetFileNameWithoutExtension(viewModel.ImageFile.FileName);
-                        var sanitizedFileName = fileName.Replace(" ", "_"); // Înlocuiește spațiile cu _
-                        var uniqueFileName = $"{Guid.NewGuid()}_{sanitizedFileName}{extension}"; // Prevenirea duplicatelor
+                        var sanitizedFileName = fileName.Replace(" ", "_");
+                        var uniqueFileName = $"{Guid.NewGuid()}_{sanitizedFileName}{extension}";
 
                         var imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
                         if (!Directory.Exists(imagesPath))
@@ -331,7 +309,6 @@ namespace ProductsApp.Controllers
                 }
                 else if (User.IsInRole("Colaborator"))
                 {
-                    // Colaboratorul trimite o cerere pentru adăugare
                     var request = new ProductRequest
                     {
                         RequestType = RequestType.Add,
@@ -342,10 +319,9 @@ namespace ProductsApp.Controllers
                         ProposedContent = sanitizer.Sanitize(viewModel.Content),
                         ProposedPrice = viewModel.Price,
                         ProposedStock = viewModel.Stock,
-                        ProposedCategoryId = viewModel.CategoryId // Adăugat
+                        ProposedCategoryId = viewModel.CategoryId
                     };
 
-                    // Procesare imagine
                     if (viewModel.ImageFile != null && viewModel.ImageFile.Length > 0)
                     {
                         var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
@@ -363,8 +339,8 @@ namespace ProductsApp.Controllers
                         }
 
                         var fileName = Path.GetFileNameWithoutExtension(viewModel.ImageFile.FileName);
-                        var sanitizedFileName = fileName.Replace(" ", "_"); // Înlocuiește spațiile cu _
-                        var uniqueFileName = $"{Guid.NewGuid()}_{sanitizedFileName}{extension}"; // Prevenirea duplicatelor
+                        var sanitizedFileName = fileName.Replace(" ", "_");
+                        var uniqueFileName = $"{Guid.NewGuid()}_{sanitizedFileName}{extension}";
 
                         var imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
                         if (!Directory.Exists(imagesPath))
@@ -409,7 +385,6 @@ namespace ProductsApp.Controllers
                 }
             }
 
-            // Dacă ModelState nu este valid, re-populează lista de categorii și reafișează formularul
             viewModel.Categories = _context.Categories.Select(c => new SelectListItem
             {
                 Value = c.Id.ToString(),
@@ -423,7 +398,6 @@ namespace ProductsApp.Controllers
 
         #region Edit
 
-        // GET: Products/Edit/5
         [Authorize(Roles = "Colaborator,Admin")]
         public IActionResult Edit(int id)
         {
@@ -465,7 +439,6 @@ namespace ProductsApp.Controllers
             return View(viewModel);
         }
 
-        // POST: Products/Edit/5
         [Authorize(Roles = "Colaborator,Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -476,7 +449,6 @@ namespace ProductsApp.Controllers
                 return NotFound();
             }
 
-            // Eliminăm validarea pentru 'Categories'
             ModelState.Remove("Categories");
 
             if (ModelState.IsValid)
@@ -500,7 +472,6 @@ namespace ProductsApp.Controllers
                     return RedirectToAction(nameof(Index));
                 }
 
-                // Crearea unei cereri de editare
                 var request = new ProductRequest
                 {
                     RequestType = RequestType.Edit,
@@ -512,10 +483,9 @@ namespace ProductsApp.Controllers
                     ProposedContent = new HtmlSanitizer().Sanitize(viewModel.Content),
                     ProposedPrice = viewModel.Price,
                     ProposedStock = viewModel.Stock,
-                    ProposedCategoryId = viewModel.CategoryId // Dacă este necesar
+                    ProposedCategoryId = viewModel.CategoryId
                 };
 
-                // Procesare imagine
                 if (viewModel.ImageFile != null && viewModel.ImageFile.Length > 0)
                 {
                     var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
@@ -533,8 +503,8 @@ namespace ProductsApp.Controllers
                     }
 
                     var fileName = Path.GetFileNameWithoutExtension(viewModel.ImageFile.FileName);
-                    var sanitizedFileName = fileName.Replace(" ", "_"); // Înlocuiește spațiile cu _
-                    var uniqueFileName = $"{Guid.NewGuid()}_{sanitizedFileName}{extension}"; // Prevenirea duplicatelor
+                    var sanitizedFileName = fileName.Replace(" ", "_");
+                    var uniqueFileName = $"{Guid.NewGuid()}_{sanitizedFileName}{extension}";
 
                     var imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
                     if (!Directory.Exists(imagesPath))
@@ -568,7 +538,6 @@ namespace ProductsApp.Controllers
                 }
                 else
                 {
-                    // Dacă nu se încarcă o nouă imagine, păstrează imaginea existentă
                     request.ProposedImageUrl = product.ImageUrl;
                 }
 
@@ -580,7 +549,6 @@ namespace ProductsApp.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // Dacă ModelState nu este valid, re-populează lista de categorii și reafișează formularul
             viewModel.Categories = _context.Categories.Select(c => new SelectListItem
             {
                 Value = c.Id.ToString(),
@@ -594,7 +562,6 @@ namespace ProductsApp.Controllers
 
         #region Delete
 
-        // POST: Products/Delete/5
         [Authorize(Roles = "Colaborator,Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -614,7 +581,6 @@ namespace ProductsApp.Controllers
 
             if (isAdmin)
             {
-                // Admin delete directly
                 _context.Products.Remove(product);
                 await _context.SaveChangesAsync();
 
@@ -630,7 +596,6 @@ namespace ProductsApp.Controllers
                     _context.ProductRequests.RemoveRange(relatedRequests);
                 }
 
-                // Șterge produsul
                 _context.Products.Remove(product);
                 await _context.SaveChangesAsync();
 
@@ -651,7 +616,6 @@ namespace ProductsApp.Controllers
 
         #region AddCart
 
-        // POST: Products/AddCart
         [Authorize(Roles = "User,Colaborator,Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -667,14 +631,12 @@ namespace ProductsApp.Controllers
                 return RedirectToAction("Show", new { id = productCart.ProductId });
             }
 
-            // Obține coșul utilizatorului
             var cart = _context.Carts
                         .Include(c => c.ProductCarts)
                         .FirstOrDefault(c => c.UserId == userId);
 
             if (cart == null)
             {
-                // Coșul ar trebui creat automat la înregistrare, dar verificăm pentru siguranță
                 cart = new Cart
                 {
                     UserId = userId,

@@ -25,7 +25,6 @@ namespace ProductsApp.Controllers
             _roleManager = roleManager;
         }
 
-        // Delete a review
         [HttpPost]
         public IActionResult Delete(int id)
         {
@@ -45,7 +44,6 @@ namespace ProductsApp.Controllers
                 db.Reviews.Remove(comm);
                 db.SaveChanges();
 
-                // Recalculate product rating
                 var product = db.Products.Include(p => p.Reviews)
                                          .FirstOrDefault(p => p.Id == productId);
                 if (product != null)
@@ -64,7 +62,6 @@ namespace ProductsApp.Controllers
             }
         }
 
-        // Edit a review
         public IActionResult Edit(int id)
         {
             Review comm = db.Reviews.Find(id);
@@ -106,15 +103,12 @@ namespace ProductsApp.Controllers
                 {
                     comm.Content = requestReview.Content;
 
-                    // Asigură-te că Rating-ul este inclus și valid
                     if (requestReview.Rating.HasValue)
                     {
                         comm.Rating = requestReview.Rating.Value;
                     }
                     else
                     {
-                        // Dacă Rating-ul nu este setat, poți decide cum să gestionezi
-                        // Poate setarea unei valori implicite sau afișarea unei erori
                         ModelState.AddModelError("Rating", "Ratingul este obligatoriu.");
                         return View(requestReview);
                     }
@@ -123,7 +117,6 @@ namespace ProductsApp.Controllers
 
                     db.SaveChanges();
 
-                    // Recalculate product rating
                     var product = db.Products.Include(p => p.Reviews)
                                              .FirstOrDefault(p => p.Id == comm.ProductId);
                     if (product != null)

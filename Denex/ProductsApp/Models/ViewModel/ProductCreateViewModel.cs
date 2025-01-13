@@ -1,5 +1,4 @@
-﻿// Models/ViewModels/ProductCreateViewModel.cs
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -31,7 +30,7 @@ namespace ProductsApp.Models.ViewModels
         [Display(Name = "Imagine")]
         public IFormFile ImageFile { get; set; }
 
-        [BindNever] // Adăugăm acest atribut pentru a preveni validarea
+        [BindNever]
         public IEnumerable<SelectListItem> Categories { get; set; }
     }
 }

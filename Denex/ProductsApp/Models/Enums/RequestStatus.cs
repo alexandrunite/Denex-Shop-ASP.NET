@@ -1,5 +1,4 @@
-﻿// Models/Enums/RequestStatus.cs
-namespace ProductsApp.Models.Enums
+﻿namespace ProductsApp.Models.Enums
 {
     public enum RequestStatus
     {

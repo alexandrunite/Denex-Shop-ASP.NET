@@ -1,5 +1,4 @@
-﻿//HomeController.cs
-using ProductsApp.Data;
+﻿using ProductsApp.Data;
 using ProductsApp.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

@@ -11,7 +11,6 @@ namespace ProductsApp.Data
         {
         }
 
-        // DbSet-uri pentru modelele tale
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<ProductRequest> ProductRequests { get; set; }
@@ -23,7 +22,6 @@ namespace ProductsApp.Data
         {
             base.OnModelCreating(builder);
 
-            // Configurarea relației many-to-many între Product și Cart
             builder.Entity<ProductCarts.ProductCart>()
                 .HasKey(pc => pc.Id);
 
@@ -39,14 +37,12 @@ namespace ProductsApp.Data
                 .HasForeignKey(pc => pc.CartId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // Configurarea relației one-to-one între ApplicationUser și Cart
             builder.Entity<ApplicationUser>()
                 .HasOne(a => a.Cart)
                 .WithOne(c => c.User)
                 .HasForeignKey<Cart>(c => c.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // Adăugarea unei constrângeri de unicitate pe UserId în Cart
             builder.Entity<Cart>()
                 .HasIndex(c => c.UserId)
                 .IsUnique();

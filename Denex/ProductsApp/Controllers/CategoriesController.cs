@@ -10,8 +10,6 @@ namespace ProductsApp.Controllers
     [Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {
-        // PASUL 10: useri si roluri 
-
         private readonly ApplicationDbContext db;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -106,7 +104,6 @@ namespace ProductsApp.Controllers
                 return RedirectToAction("Index");
             }
 
-            // Poți adăuga logică suplimentară pentru gestionarea produselor asociate
             if (category.Products != null && category.Products.Any())
             {
                 db.Products.RemoveRange(category.Products);

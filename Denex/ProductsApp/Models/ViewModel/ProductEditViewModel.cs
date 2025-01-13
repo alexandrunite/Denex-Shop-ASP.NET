@@ -35,7 +35,7 @@ namespace ProductsApp.Models.ViewModels
 
         public string? ImageUrl { get; set; }
 
-        [BindNever] // Adăugăm acest atribut pentru a preveni validarea
+        [BindNever]
         public IEnumerable<SelectListItem> Categories { get; set; }
     }
 }

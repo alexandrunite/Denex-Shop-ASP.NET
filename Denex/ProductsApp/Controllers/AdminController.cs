@@ -1,5 +1,4 @@
-﻿// Controllers/AdminController.cs
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductsApp.Data;
@@ -21,7 +20,6 @@ namespace ProductsApp.Controllers
             _logger = logger;
         }
 
-        // GET: Admin/PendingApproval
         public IActionResult PendingApproval()
         {
             _logger.LogInformation("Accesare PendingApproval de către utilizator: {User}", User.Identity.Name);
@@ -29,8 +27,8 @@ namespace ProductsApp.Controllers
             var pendingRequests = _context.ProductRequests
                 .Include(pr => pr.Collaborator)
                 .Include(pr => pr.ProposedCategory)
-                .Include(pr => pr.Product) // Include Product
-                .Where(pr => pr.Status == RequestStatus.Pending) // Filtrare pentru cereri pendinte
+                .Include(pr => pr.Product) 
+                .Where(pr => pr.Status == RequestStatus.Pending) 
                 .ToList();
 
             _logger.LogInformation("Număr cereri de aprobare: {Count}", pendingRequests.Count);
@@ -38,7 +36,6 @@ namespace ProductsApp.Controllers
             return View(pendingRequests);
         }
 
-        // POST: Admin/Approve/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Approve(int id)
@@ -47,7 +44,7 @@ namespace ProductsApp.Controllers
 
             var request = _context.ProductRequests
                 .Include(pr => pr.Collaborator)
-                .Include(pr => pr.Product) // Include Product
+                .Include(pr => pr.Product)
                 .FirstOrDefault(pr => pr.Id == id && pr.Status == RequestStatus.Pending);
 
             if (request == null)
@@ -58,7 +55,6 @@ namespace ProductsApp.Controllers
                 return RedirectToAction(nameof(PendingApproval));
             }
 
-            // Verifică dacă categoria propusă este setată doar pentru cereri de tip Add/Edit
             if (request.RequestType != RequestType.Delete && !request.ProposedCategoryId.HasValue)
             {
                 _logger.LogWarning("Categoria propusă nu este setată pentru cererea ID: {RequestId}", id);
@@ -69,7 +65,6 @@ namespace ProductsApp.Controllers
 
             if (request.RequestType == RequestType.Add)
             {
-                // Procesare cerere de adăugare
                 var product = new Product
                 {
                     Title = request.ProposedTitle,
@@ -88,7 +83,6 @@ namespace ProductsApp.Controllers
             }
             else if (request.RequestType == RequestType.Edit)
             {
-                // Procesare cerere de editare
                 var existingProduct = _context.Products.Find(request.ProductId);
                 if (existingProduct == null)
                 {
@@ -104,14 +98,13 @@ namespace ProductsApp.Controllers
                 existingProduct.Stock = request.ProposedStock ?? existingProduct.Stock;
                 existingProduct.CategoryId = request.ProposedCategoryId.Value;
                 existingProduct.ImageUrl = request.ProposedImageUrl ?? existingProduct.ImageUrl;
-                existingProduct.Date = DateTime.Now; // Actualizează data dacă este necesar
+                existingProduct.Date = DateTime.Now;
 
                 _context.Products.Update(existingProduct);
                 _logger.LogInformation("Cererea de editare a fost aprobată și produsul a fost actualizat.");
             }
             else if (request.RequestType == RequestType.Delete)
             {
-                // Procesare cerere de ștergere
                 var product = _context.Products.Find(request.ProductId);
                 if (product != null)
                 {
@@ -127,7 +120,6 @@ namespace ProductsApp.Controllers
                 }
             }
 
-            // Actualizează starea cererii la Aprobat
             request.Status = RequestStatus.Approved;
             _context.ProductRequests.Update(request);
 
@@ -140,7 +132,6 @@ namespace ProductsApp.Controllers
             return RedirectToAction(nameof(PendingApproval));
         }
 
-        // POST: Admin/Reject/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Reject(int id)
@@ -155,7 +146,6 @@ namespace ProductsApp.Controllers
                 return RedirectToAction(nameof(PendingApproval));
             }
 
-            // Actualizarea stării cererii
             request.Status = RequestStatus.Rejected;
             _context.ProductRequests.Update(request);
 

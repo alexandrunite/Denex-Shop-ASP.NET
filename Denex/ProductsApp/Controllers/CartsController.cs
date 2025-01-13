@@ -26,8 +26,6 @@ namespace ProductsApp.Controllers
             _roleManager = roleManager;
         }
 
-        // List of carts (now single cart per user)
-        // Controllers/CartsController.cs
         public IActionResult Index()
         {
             if (TempData.ContainsKey("message"))
@@ -40,7 +38,6 @@ namespace ProductsApp.Controllers
 
             if (User.IsInRole("Admin"))
             {
-                // Administratorul poate vedea toate coșurile
                 var carts = db.Carts.Include(c => c.User).ToList();
                 return View(carts);
             }
@@ -52,7 +49,6 @@ namespace ProductsApp.Controllers
                                 .ThenInclude(pc => pc.Product)
                             .FirstOrDefault(c => c.UserId == userId);
 
-                // Dacă coșul nu există, îl creăm automat
                 if (cart == null)
                 {
                     cart = new Cart
@@ -64,21 +60,17 @@ namespace ProductsApp.Controllers
                     db.SaveChanges();
                 }
 
-                // Returnăm o listă care conține doar coșul utilizatorului
                 return View(new List<Cart> { cart });
             }
         }
 
 
-        // Show a single cart (now single cart per user)
         public IActionResult Show()
         {
             SetAccessRights();
 
             if (User.IsInRole("Admin"))
             {
-                // Pentru admin, trebuie să primească un parametru pentru a specifica ce cart să arate
-                // Adăugăm un parametru opțional
                 return NotFound("Pentru Admin, folosiți metoda Index pentru a vedea toate coșurile.");
             }
             else
@@ -94,7 +86,6 @@ namespace ProductsApp.Controllers
                             .Include(c => c.User)
                             .FirstOrDefault(c => c.UserId == userId);
 
-                // Dacă coșul nu există, îl creăm automat
                 if (cart == null)
                 {
                     cart = new Cart
@@ -110,7 +101,6 @@ namespace ProductsApp.Controllers
             }
         }
 
-        // Place order: update stock and clear cart
         [HttpPost]
         public IActionResult PlaceOrder()
         {
@@ -145,7 +135,6 @@ namespace ProductsApp.Controllers
                 }
             }
 
-            // Clear cart
             db.ProductCarts.RemoveRange(cart.ProductCarts);
             db.SaveChanges();
 
@@ -156,7 +145,6 @@ namespace ProductsApp.Controllers
 
                                     
 
-        // Helper method to set access rights
         private void SetAccessRights()
         {
             ViewBag.AfisareButoane = false;

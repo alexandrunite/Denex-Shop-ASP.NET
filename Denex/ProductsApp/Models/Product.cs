@@ -1,5 +1,4 @@
-﻿// Models/Product.cs
-using ProductsApp.Validations;
+﻿using ProductsApp.Validations;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -23,7 +22,7 @@ namespace ProductsApp.Models
         public DateTime Date { get; set; }
 
         [ForeignKey("Category")]
-        public int CategoryId { get; set; } // Eliminăm [Required]
+        public int CategoryId { get; set; }
 
         public string? UserId { get; set; }
 
@@ -54,7 +53,6 @@ namespace ProductsApp.Models
 
         public string? ImageUrl { get; set; }
 
-        // Metodă pentru calcularea ratingului mediu
         public void CalculateRating()
         {
             if (Reviews != null && Reviews.Any(r => r.Rating.HasValue))
