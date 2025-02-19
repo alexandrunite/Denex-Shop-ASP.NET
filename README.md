@@ -1,7 +1,7 @@
 # 🛍️ Denex - Online Store Platform  
 
 ## 📌 Project Overview  
-ShopSphere is a web-based e-commerce application built with **ASP.NET Core 8.0, Entity Framework, and MySQL**. The platform allows users to browse products, manage their shopping carts, place orders, and interact with an advanced role-based authentication system. The application is developed as part of the **Web Application Development (DAW) course**.
+Denex is a web-based e-commerce application built with **ASP.NET Core 8.0, Entity Framework, and MySQL**. The platform allows users to browse products, manage their shopping carts, place orders, and interact with an advanced role-based authentication system. The application is developed as part of the **Web Application Development (DAW) course**.
 
 ---
 
@@ -53,3 +53,26 @@ ShopSphere is a web-based e-commerce application built with **ASP.NET Core 8.0, 
 ### 🐳 1. Run MySQL Database in Docker  
 ```sh
 docker run --name shop-db -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=ShopDB -e MYSQL_USER=ShopUser -e MYSQL_PASSWORD=DeniselulAlex1! -p 3307:3306 -d mysql
+```
+
+### 🏗 2. Clone the Repository
+```sh
+git clone https://github.com/your-username/Denex.git
+cd Denex
+```
+
+### ⚙ 3. Configure Connection String
+In appsettings.json, ensure the database configuration matches:
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=127.0.0.1;Port=3307;Database=ShopDB;User=ShopUser;Password=DeniselulAlex1!;"
+}
+```
+
+### 🏃‍♂️ 4. Run the Application
+```sh
+dotnet restore
+dotnet ef database update
+dotnet run
+```
+Access the app at: http://localhost:5000/
